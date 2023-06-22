@@ -1,10 +1,9 @@
-# Página de comissões - em construção
-Página pessoal para divulgação de comissãos de arte feitas por mim em parceria com Junigami.
+# Página de comissões
+Página pessoal para divulgação de comissões de ilustração digital e gráficos para stream feitas por mim em parceria com Junigami.
 
-### Sobre
-- Tecnologias utilizadas: HTML / CSS / JS
-- Data: junho 2023
-
-### A atualizar
-- Responsividade
-- Menu acordeon 
+🔗 [Visualize o projeto clicando aqui](https://lumadart.github.io/comissionspage/)
+#
+### Tecnologias utilizadas:
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="logo HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="logo CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="logo javascript">
+#
+Nota: Preciso atualizar a sessão de "termos" por o menu não está funcionando. Estou trabalhando nesta parte. Aceito feedbacks.
