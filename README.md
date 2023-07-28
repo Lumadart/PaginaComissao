@@ -8,5 +8,7 @@ Página pessoal para divulgação de comissões de ilustração digital e gráfi
 
 ### Em breve quero implementar:
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="logo javascript">
+
 #
+
 Nota: Preciso atualizar a sessão de "termos" por o menu não está funcionando. Estou trabalhando nesta parte. Aceito feedbacks.
