@@ -57,7 +57,7 @@ Body HTML
 body {
     font-family: 'neosans', sans-serif;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     letter-spacing: 0.1rem;
     background: var(--light-bg1) url(../img/bgpattern.png);
@@ -129,41 +129,45 @@ HEADLINES
 h1 {
     font-size: 4rem;
     font-weight: 400;
-    text-transform: uppercase;
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 4rem;
     position: relative;
+    text-transform: uppercase;
 }
 
 h2::after {
     content: '';
-    height: .2rem;
+    height: .3rem;
     width: 6rem;
     left: 0;
     bottom: -2rem;
     margin: 0;
     background: var(--yellow);
+    border-radius: 10px;
     position: absolute;
 }
 
 h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 400;
-    text-transform: uppercase;
     margin-bottom: 2rem;
 }
 
 h4 {
     font-size: 1.8rem;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
+h5{
+    font-size: 1.5rem;
+   }
+.title {
+    text-transform: uppercase;
+}
 /*----------------------------------------
 PARAGRAPH
 ----------------------------------------*/
@@ -171,7 +175,7 @@ p {
     line-height: 3rem;
 }
 
-.recuo {
+.paragraph {
     text-indent: 2rem;
 }
 
@@ -201,15 +205,6 @@ li::marker {
     font-family: 'FontAwesome';
     letter-spacing: 1rem;
     color: var(--purple);
-}
-
-.subtopic li::marker {
-    /*-arrow icon list subitem-*/
-    content: '\f0da';
-    font-size: 1rem;
-    font-family: 'FontAwesome';
-    letter-spacing: 1rem;
-    color: var(--yellow);
 }
 
 /*----------------------------------------
@@ -370,8 +365,7 @@ PRODUCTS
     margin: 0 auto;
 }
 
-.stream_item_name,
-.illust_item_name {
+.stream_item .title{
     margin-bottom: 2rem;
 }
 
@@ -545,58 +539,78 @@ TERMS
     color: var(--light-txt);
 }
 
-/* ---------- accordion ---------- */
-.accordion {
-    margin-top: 3rem;
-}
-
-.accordion .accordion-content {
-    margin-bottom: 2.5rem;
-    border-radius: 10px;
-    background-color: var(--light-bg2);
+/*-menu-*/
+.menu_accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 20px;
+   }
+   
+   .menu_accordion h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 4.5rem;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   
+   /*-pergunta-*/
+   .question {
     color: var(--dark-txt);
+    background: var(--light-bg1);
+    position: relative;
+    padding: 0 20px 10px;
+    border-radius: 8px;
     overflow: hidden;
-}
-
-.accordion-content.open {
-    padding-bottom: 3rem;
-}
-
-/* ---------- header ---------- */
-.accordion-content header {
+   }
+   
+   .question input {
+    display: none;
+   }
+   
+   .question label {
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 5.5rem;
-    padding:2rem 4rem;
+    letter-spacing: .1rem;
+    padding: 20px 0 10px;
+    margin: 0;
     cursor: pointer;
-    transition: .4s;
-    background-color: var(--light-bg2);
-    color: var(--purple);
-}
-
-.accordion-content.open header {
-    min-height: 4rem;
-}
-
-.accordion-content .title {
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-/*-ícons + - -*/
-.accordion-content header i {
+   }
+   
+   .question label::after {
+    content: "\002B";
+    position: absolute;
+    right: 20px;
+    font-size: 3rem;
+    color:var(--purple);
+    transition: .5s;
+   }
+   .question:hover label::after{
     color: var(--yellow);
-    font-size: 2rem;
-}
+   }
+   .question input:checked~label::after {
+    transform: rotate(135deg);
+    color: var(--yellow);
+   }
+   
+   /*-resposta-*/
+   .question h5{
+    margin-top: 15px;
+   }
+   .question .answer {
+   max-height: 0;
+    transition: .5s;
+    overflow: hidden;
+   }
+   
+   .question input:checked~.answer {
+    max-height: 100vh;
+    padding-bottom: 10px;
+   }
 
-/* ---------- desc ---------- */
-.accordion-content .description {
-    height: 0;
-    padding: 0 4rem;
-    font-weight: 200;
-    transition: .4s;
-}
 
 /*----------------------------------------
 CONTACT
@@ -818,36 +832,4 @@ THANKS PAGE
 .thanks_msg i {
     font-size: 4rem;
     color: var(--yellow);
-}
-
-
-/* ----------------------------------------
-SCROLL TO TOP
- ---------------------------------------- */
-.scroll_to_top {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 60px;
-    height: 60px;
-    color: var(--dark-txt);
-    background-color: var(--light-bg3);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 60px;
-    font-size: 2.5rem;
-    cursor: pointer;
-    z-index: 5;
-    visibility: hidden;
-    opacity: 0;
-    transition: .4s;
-}
-
-.scroll_to_top:hover {
-    background-color: var(--light-bg2);
-}
-
-.scroll_to_top.active {
-    visibility: visible;
-    opacity: 1;
 }

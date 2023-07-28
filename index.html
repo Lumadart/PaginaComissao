@@ -15,8 +15,7 @@
 </head>
 
 <body>
-   <!-- ========== SCROLL TO TOP ========== -->
-   <div class="scroll_to_top" onclick="scrollToTop();"><i class="fa-solid fa-angle-up"></i></div>
+
    <!-- ========== HEADER ========== -->
    <header>
    </header>
@@ -36,7 +35,7 @@
       <section id="welcome">
          <div class="container">
             <h2>Sejam bem vindos</h2>
-            <p class="recuo">Somos um casal de artistas dedicados a criar ilustrações personalizadas e designs
+            <p class="paragraph">Somos um casal de artistas dedicados a criar ilustrações personalizadas e designs
                exclusivos para streamers. Nosso objetivo é ajudar a adicionar um toque especial às suas ideias,
                transformando-as em criações visuais que transmitam uma identidade única e que atendam às suas
                necessidades. Valorizamos a qualidade do trabalho e estamos comprometidos em fornecer um serviço
@@ -60,7 +59,7 @@
 
                   <!--emotes------------------------------------------------------------->
                   <div class="stream_item">
-                     <h4 class="stream_item_name">Emotes</h4>
+                     <h3 class="title">Emotes</h3>
                      <div class="stream_item_card">
 
                         <!--style------------------------------>
@@ -70,6 +69,7 @@
                            <p class="status open">Aberto</p>
                            <!-- <p class="status closed">fechado</p> -->
                         </div>
+
                         <!--image-->
                         <img src="./assets/img/sampleemotes_1.png" alt="exemplo">
                         <!--price-->
@@ -114,7 +114,7 @@
 
                   <!--badges------------------------------------------------------------->
                   <div class="stream_item">
-                     <h4 class="stream_item_name">Distintivos</h4>
+                     <h3 class="title">Distintivos</h3>
                      <div class="stream_item_card">
 
                         <!--style------------------------------>
@@ -165,14 +165,14 @@
 
                   <!--overlay------------------------------------------------------------->
                   <div class="stream_item">
-                     <h4 class="stream_item_name">Overlays</h4>
+                     <h3 class="title">Overlays</h3>
                      <div class="stream_item_card">
                         <!--style------------------------------>
                         <div class="stream_item_header">
                            <h4>Telas e alertas</h4>
                            <!--status-->
                            <!--<p class="status open">Aberto</p> -->
-                            <p class="status closed">fechado</p>
+                           <p class="status closed">fechado</p>
                         </div>
                         <!--image-->
                         <img src="./assets/img/samplescreen.png" alt="exemplo">
@@ -193,7 +193,7 @@
                   </div>
                   <!--painels------------------------------------------------------------->
                   <div class="stream_item">
-                     <h4 class="stream_item_name">Painéis</h4>
+                     <h3 class="title">Painéis</h3>
                      <div class="stream_item_card">
                         <!--style------------------------------>
                         <div class="stream_item_header">
@@ -231,7 +231,6 @@
             <a href="#contact" class="btn btn1">Entre em contato</a>
 
             <!--pre made-------------------------------------------------------------->
-
             <div class="pre_made">
                <h3>Pré-feitos</h3>
                <p>Itens prontos para usar</p>
@@ -239,7 +238,6 @@
             </div>
 
             <!--illustrations--------------------------------------------------------->
-
             <div class="illustration_commissions">
                <h2>Ilustrações</h2>
 
@@ -334,201 +332,165 @@
             <a href="#contact" class="btn btn1">Entre em contato</a>
 
          </div>
-
-         </div>
       </section>
 
       <!-- ========== TERMS ========== -->
       <section id="terms">
          <div class="container">
             <h2>Termos</h2>
-            <p class="recuo">Aqui você encontrará informações detalhadas sobre as diretrizes, responsabilidades e
+            <p class="paragraph">Aqui você encontrará informações detalhadas sobre as diretrizes, responsabilidades e
                condições relacionadas aos nossos serviços. Por favor, leia atentamente para garantir uma compreensão
                clara de como trabalhamos e como podemos atender às suas necessidades artísticas.</p>
 
-            <!--termos menu accordion-->
-            <div class="accordion">
-               <!--sessão Informações gerais-->
-               <div class="accordion-content">
-                  <header>
-                     <span class="title">Informações gerais</span>
-                     <i class="fa-solid fa-plus"></i>
-                  </header>
+            <div class="menu_accordion">
 
-                  <ul class="description arrowlist list">
-                     <li>Nossa comissão de artes é especializada em ilustrações que seguem o estilo do anime, mangá ou
-                        chibi. Ou seja: Não oferecemos serviços de pixel art, cartoon, caricaturas, realismo ou estilos
-                        similares.</li>
-                     <li>Produzimos ilustrações únicas e originais, sem emular o estilo de outros artistas.</li>
-                     <li>Os valores inicialmente apresentados são valores base e podem ser ajustados de acordo com a
-                        complexidade do trabalho solicitado.</li>
-                     <li>Para emotes, badges ou imagens pequenas, priorizamos um estilo menos detalhado para garantir um
-                        resultado melhor.</li>
-                     <li>Conheça as diretrizes para <a class="external"
-                           href="https://help.twitch.tv/s/article/emote-guidelines?language=pt_BR"
-                           target="_blank">emotes</a> e <a class="external"
-                           href="https://help.twitch.tv/s/article/subscriber-badge-guide?language=pt_BR"
-                           target="_blank">badges</a> da Twitch. Atente-se que, se os itens não forem aprovados, não
-                        serão oferecidos reembolsos nem alterações gratuitas.
-                     </li>
-                  </ul>
+               <!--01-->
+               <div class="question">
+                  <input type="radio" name="accordion" id="first">
+                  <label for="first">
+                     <h4>Informações gerais</h4>
+                  </label>
+                  <div class="answer">
+                     <ul class="list arrowlist">
+                        <li>Nossa comissão de artes é especializada em ilustrações que seguem o estilo do anime, mangá
+                           ou chibi. Ou seja: Não oferecemos serviços de pixel art, cartoon, caricaturas, realismo ou
+                           estilos similares.</li>
+                        <li>Produzimos ilustrações únicas e originais, sem emular o estilo de outros artistas.</li>
+                        <li>Os valores inicialmente apresentados são valores base e podem ser ajustados de acordo com a
+                           complexidade do trabalho solicitado.</li>
+                        <li>Para emotes, badges ou imagens pequenas, priorizamos um estilo menos detalhado para garantir
+                           um resultado melhor.</li>
+                        <li>Conheça as diretrizes para emotes e badges da Twitch. Atente-se que, se os itens não forem
+                           aprovados, não serão oferecidos reembolsos nem alterações gratuitas.</li>
+                     </ul>
+
+                  </div>
                </div>
 
-               <!--sessão Fluxo de trabalho-->
-               <div class="accordion-content">
-                  <header>
-                     <span class="title">Fluxo de trabalho</span>
-                     <i class="fa-solid fa-plus"></i>
-                  </header>
-
-                  <ol class="description arrowlist list">
-                     <li>Análise do Pedido:
-                        <ul class="subtopic">
-                           <li>Recebemos o pedido e avaliamos se podemos realizá-lo.</li>
-                           <li>Se pudermos aceitar, enviamos ao cliente o orçamento junto com a resposta.</li>
-                        </ul>
-                     </li>
-                     <li>Aprovação do Orçamento:
-                        <ul class="subtopic">
-                           <li>Se o cliente aprovar o orçamento, solicitaremos mais informações e referências sobre o
-                              pedido.</li>
-                           <li>Para dar início à confecção do trabalho, requeremos o pagamento de 50% do valor total.
-                           </li>
-                        </ul>
-                     </li>
-                     <li>Rascunho do Projeto:
-                        <ul class="subtopic">
-                           <li>Fornecemos ao cliente um rascunho do projeto.</li>
-                           <li>O cliente pode aprovar o rascunho ou solicitar alterações necessárias.</li>
-                           <li>Não avançamos para a próxima etapa até recebermos a resposta de aprovação do cliente.
-                           </li>
-                        </ul>
-                     </li>
-                     <li>Inicialização da Arte:
-                        <ul class="subtopic">
-                           <li>Após a aprovação dos rascunhos, iniciamos o processo de criação da arte deixando o
-                              cliente ciente do andamento do projeto.</li>
-                           <li>Apresentaremos o projeto finalizado em baixa qualidade para a última aprovação. É
-                              importante ressaltar que quaisquer alterações solicitadas nesta fase estarão sujeitas à
-                              taxas adicionais.</li>
-                        </ul>
-                     </li>
-                     <li>Pagamento Final:
-                        <ul class="subtopic">
-                           <li>Com a aprovação da arte, solicitaremos o pagamento dos 50% restantes do valor do pedido,
-                              juntamente com quaisquer taxas adicionais, se aplicáveis, para procedermos com a entrega
-                              do trabalho finalizado.</li>
-                        </ul>
-                     </li>
-                     <li>Conclusão do Trabalho:
-                        <ul class="subtopic">
-                           <li>Após recebermos a comprovação de pagamento, enviaremos o trabalho concluído para o e-mail
-                              do cliente.</li>
-                           <li>É essencial que o cliente se responsabilize por salvar uma cópia do seu pedido de forma
-                              segura.</li>
-                        </ul>
-                     </li>
-                  </ol>
+               <!--02-->
+               <div class="question">
+                  <input type="radio" name="accordion" id="second">
+                  <label for="second">
+                     <h4> Fluxo de trabalho</h4>
+                  </label>
+                  <div class="answer">
+                     <ol class="list">
+                        <li>Avaliamos se poderemos realizar a comissão, caso sim, enviaremos o orçamento junto com a
+                           resposta confirmando.</li>
+                        <li>O cliente aprovando o orçamento, solicitaremos mais informações e referências sobre o
+                           pedido. Requeremos o pagamento de 50% do valor total para dar início à confecção do trabalho.
+                        </li>
+                        <li>Enviamos um rascunho do projeto para o cliente aprovar ou solicitar alterações necessárias e
+                           não daremos continuidade até receber a aprovação.</li>
+                        <li>Com a aprovação, iniciamos o processo de criação da arte. Ao concluir, apresentaremos o
+                           projeto finalizado em baixa qualidade para a última aprovação. É importante ressaltar que
+                           quaisquer alterações solicitadas nesta fase estarão sujeitas à taxas adicionais.</li>
+                        <li>Solicitaremos o pagamento dos 50% restantes do valor do pedido, juntamente com quaisquer
+                           taxas adicionais, se aplicáveis, para procedermos com a entrega do trabalho finalizado.</li>
+                        <li>Enviaremos o trabalho concluído para o e-mail do cliente após recebermos a comprovação de
+                           pagamento. É essencial que o cliente se responsabilize por salvar uma cópia do seu pedido de
+                           forma segura.</li>
+                     </ol>
+                  </div>
                </div>
 
-               <!--sessão Alterações e taxas -->
-               <div class="accordion-content">
-                  <header>
-                     <span class="title">Alterações</span>
-                     <i class="fa-solid fa-plus"></i>
-                  </header>
+               <!--03-->
+               <div class="question">
+                  <input type="radio" name="accordion" id="third">
+                  <label for="third">
+                     <h4>Alterações</h4>
+                  </label>
+                  <div class="answer">
+                        <p>Pedidos de alteração durante a fase de rascunho não têm custo adicional.</p>
+                     <h5>Após a finalização da arte:</h5>
+                     <ul class="list arrowlist">
+                        <li>Para pequenas alterações: R$ 5,00 a R$ 10,00. Exemplo: mudanças de cores, reposicionamento
+                           de elementos (sujeito à avaliação).</li>
+                        <li>Alterações grandes: 50% - 80% do valor total. Caso seja necessário refazer algo do zero, o
+                           preço total poderá ser aplicado.</li>
+                        <li>Trabalhos adicionais fora da proposta inicial do projeto, incluindo edições em designs já
+                           finalizados/confirmados, podem ser recusados ou serão cotados e cobrados de acordo.</li>
+                     </ul>
 
-                  <ul class="description arrowlist list">
-                     <li>Pedidos de alteração durante a fase de rascunho não têm custo adicional.</li>
-                     <li>Após a finalização da arte:
-                        <ul class="subtopic">
-                           <li>Para pequenas alterações: R$ 5,00 a R$ 10,00. Exemplo: mudanças de cores,
-                              reposicionamento
-                              de elementos (sujeito à avaliação).</li>
-                           <li>Alterações grandes: 50% - 80% do valor total. Caso seja necessário refazer algo do zero,
-                              o
-                              preço total poderá ser aplicado.</li>
-                        </ul>
-                     </li>
-                     <li>Trabalhos adicionais fora da proposta inicial do projeto, incluindo edições em designs já
-                        finalizados/confirmados, podem ser recusados ou serão cotados e cobrados de acordo.</li>
-                  </ul>
+                  </div>
                </div>
 
-               <!--sessão Pagamentos-->
-               <div class="accordion-content">
-                  <header>
-                     <span class="title">Pagamentos</span>
-                     <i class="fa-solid fa-plus"></i>
-                  </header>
+               <!--04-->
+               <div class="question">
+                  <input type="radio" name="accordion" id="fourth">
+                  <label for="fourth">
+                     <h4>Pagamentos</h4>
+                  </label>
+                  <div class="answer">
+                     <ul class="list arrowlist">
+                        <li>Após a aprovação do rascunho, será solicitado o pagamento de 50% do valor acordado. Os 50%
+                           restantes serão requisitados no momento da entrega do trabalho finalizado.</li>
+                        <li>Os pagamentos devem ser feitos em Real (BRL).</li>
+                        <li>Aceitamos pagamentos via Pix, Picpay ou ainda pelo Paypal.</li>
+                        <li>Taxas de transferências serão somadas ao preço final do pedido.</li>
+                     </ul>
 
-                  <ul class="description arrowlist list">
-                     <li>Após a aprovação do rascunho, será solicitado o pagamento de 50% do valor acordado. Os 50%
-                        restantes serão requisitados no momento da entrega do trabalho finalizado.</li>
-                     <li>Os pagamentos devem ser feitos em Real (BRL).</li>
-                     <li>Aceitamos pagamentos via Pix, Picpay ou ainda pelo Paypal.</li>
-                     <li>Taxas de transferências serão somadas ao preço final do pedido.</li>
-                  </ul>
+                  </div>
                </div>
 
-               <!--sessão Reembolsos & cancelamentos-->
-               <div class="accordion-content">
-                  <header>
-                     <span class="title">Reembolsos & cancelamentos</span>
-                     <i class="fa-solid fa-plus"></i>
-                  </header>
+               <!--05-->
+               <div class="question">
+                  <input type="radio" name="accordion" id="fifth">
+                  <label for="fifth">
+                     <h4>Reembolsos & cancelamentos</h4>
+                  </label>
+                  <div class="answer">
+                     <p>
+                       <h5>Cancelamentos por parte dos clientes:</h5>
+                     </p>
+                     <ul class="list arrowlist">
+                        <li>Antes da aprovação dos rascunhos: O cliente é elegível para um reembolso total caso decida
+                           cancelar a encomenda de arte antes da aprovação dos rascunhos.</li>
+                        <li>Depois da aprovação dos rascunhos: Nesse caso, o cliente está sujeito a um reembolso
+                           parcial, levando em consideração o trabalho já realizado até o momento da aprovação dos
+                           rascunhos.</li>
+                     </ul>
+                     <h5> Cancelamentos por parte dos artistas:</h5>
+                     <ul class="list arrowlist">
+                        <li>Antes da aprovação dos rascunhos: Se os artistas decidirem cancelar a comissão antes da
+                           aprovação dos rascunhos, o cliente terá direito a um reembolso total dos valores pagos.</li>
+                        <li>Depois da aprovação dos rascunhos: Caso os artistas cancelem a comissão após a aprovação dos
+                           rascunhos, será estabelecido um reembolso parcial para o cliente, levando em consideração o
+                           estágio de conclusão da obra e os custos incorridos até aquele momento.</li>
+                     </ul>
 
-                  <ul class="description arrowlist list">
-                     <li>
-                        Cancelamentos por parte dos clientes:
-                        <ul class="subtopic">
-                           <li>Antes da aprovação dos rascunhos: O cliente é elegível para um reembolso total caso
-                              decida cancelar a encomenda de arte antes da aprovação dos rascunhos.</li>
-                           <li>Depois da aprovação dos rascunhos: Nesse caso, o cliente está sujeito a um reembolso
-                              parcial, levando em consideração o trabalho já realizado até o momento da aprovação dos
-                              rascunhos.</li>
-                        </ul>
-                     </li>
-                     <li>
-                        Cancelamentos por parte dos artistas:
-                        <ul class="subtopic">
-                           <li>Antes da aprovação dos rascunhos: Se os artistas decidirem cancelar a comissão antes da
-                              aprovação dos rascunhos, o cliente terá direito a um reembolso total dos valores
-                              pagos.</li>
-                           <li>Depois da aprovação dos rascunhos: Caso os artistas cancelem a comissão após a
-                              aprovação dos rascunhos, será estabelecido um reembolso parcial para o cliente, levando em
-                              consideração o estágio de conclusão da obra e os custos incorridos até aquele momento.
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-
+                  </div>
                </div>
 
-               <!--sessão Usos & direitos das artes-->
-               <div class="accordion-content">
-                  <header>
-                     <span class="title">Usos & direitos das artes</span>
-                     <i class="fa-solid fa-plus"></i>
-                  </header>
+               <!--06-->
+               <div class="question">
+                  <input type="radio" name="accordion" id="sixth">
+                  <label for="sixth">
+                     <h4>Usos & direitos das artes</h4>
+                  </label>
+                  <div class="answer">
+                     <ul class="list arrowlist">
+                        <li>Os artistas detêm os direitos autorais da obra de arte comissionada, permitindo-lhes
+                           utilizar a obra como forma de divulgação em suas redes sociais e portfólios.</li>
+                        <li>O cliente tem o direito de uso pessoal da obra de arte e a permissão de compartilhá-la em
+                           suas redes sociais ou plataformas online, desde que não seja para fins comerciais.</li>
+                        <li>Não é autorizada a modificação ou "reaproveitamento" do trabalho artístico por terceiros.
+                           Além disso, não é permitida a redistribuição da obra de nenhuma forma.</li>
+                        <li>Caso haja interesse em fazer uso comercial das obras de arte, solicitamos que o cliente
+                           comunique antecipadamente, uma vez que podem ser aplicadas taxas adicionais para a confecção
+                           do trabalho.</li>
+                        <li>Embora não seja obrigatório creditar, é altamente apreciado, pois contribui
+                           significativamente para o reconhecimento e valorização do nosso trabalho. Solicitamos
+                           gentilmente que, sempre que possível, seja feita a devida creditação ao utilizar ou exibir a
+                           obra de arte ❤️.</li>
+                     </ul>
 
-                  <ul class="description arrowlist list">
-                     <li>Os artistas detêm os direitos autorais da obra de arte comissionada, permitindo-lhes utilizar a
-                        obra como forma de divulgação em suas redes sociais e portfólios. </li>
-                     <li>O cliente tem o direito de uso pessoal da obra de arte e a permissão de compartilhá-la em suas
-                        redes sociais ou plataformas online, desde que não seja para fins comerciais. </li>
-                     <li>Não é autorizada a modificação ou "reaproveitamento" do trabalho artístico por terceiros. Além
-                        disso, não é permitida a redistribuição da obra de nenhuma forma.</li>
-                     <li>Caso haja interesse em fazer uso comercial das obras de arte, solicitamos que o cliente
-                        comunique antecipadamente, uma vez que podem ser aplicadas taxas adicionais para a confecção do
-                        trabalho.</li>
-                     <li>Embora a creditação não seja obrigatória, é altamente apreciada, pois contribui
-                        significativamente para o reconhecimento e valorização do nosso trabalho. Solicitamos
-                        gentilmente que, sempre que possível, seja feita a devida creditação ao utilizar ou exibir a
-                        obra de arte <i class="fa-solid fa-heart"></i> </li>
-                  </ul>
+                  </div>
                </div>
+
             </div>
+
+         </div>
          </div>
       </section>
 
@@ -536,7 +498,8 @@
       <section id="contact">
          <div class="container">
             <h2>Contato</h2>
-            <p class="recuo">Sinta-se à vontade para entrar em contato conosco para obter mais informações, esclarecer
+            <p class="paragraph">Sinta-se à vontade para entrar em contato conosco para obter mais informações,
+               esclarecer
                dúvidas ou solicitar comissões. Recomendamos que você verifique os tipos de trabalhos que somos capazes
                de realizar e revise os termos de serviço, cujas informações estão disponíveis nas seções anteriores.</p>
             <!--form-->
@@ -579,7 +542,8 @@
       <section id="about">
          <div class="container">
             <h2>Sobre</h2>
-            <p class="recuo">Olá! Somos Junigami e Lumadart, um casal de artistas apaixonados pela arte e pela criação.
+            <p class="paragraph">Olá! Somos Junigami e Lumadart, um casal de artistas apaixonados pela arte e pela
+               criação.
                Juntos, combinamos nossos talentos individuais para criar obras únicas e cativantes. Com diferentes
                habilidades e uma conexão especial, buscamos transmitir emoções e contar histórias por meio de cores,
                linhas e formas.
@@ -634,8 +598,6 @@
 
    </footer>
    <!-- ========== SCRIPTS ========== -->
-   <script src="./assets/js/scroll_top.js"></script>
-   <script src="../assets/js/accordion.js"></script>
 </body>
 
 </html>
