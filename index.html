@@ -25,9 +25,12 @@
       <!-- ========== HERO ========== -->
       <section id="hero">
          <div class="container">
-            <h3>comissões</h3>
-            <h1>Junigami & Lumadart</h1>
-            <h4>stream graphics - ilustrações</h4>
+            <div class="hero_txt">
+               <h1>Junigami & Lumadart</h1>
+               <h3>stream graphics - ilustrações</h3>
+            </div>
+            <img src="./assets/img/cover chibis.png" alt="">
+
          </div>
       </section>
 
@@ -227,14 +230,11 @@
                </div>
             </div>
 
-            <!--button-->
-            <a href="#contact" class="btn btn1">Entre em contato</a>
-
             <!--pre made-------------------------------------------------------------->
             <div class="pre_made">
                <h3>Pré-feitos</h3>
                <p>Itens prontos para usar</p>
-               <a href="#" class="btn">Em breve</a>
+               <a href="#" class="btn btn1">Em breve</a>
             </div>
 
             <!--illustrations--------------------------------------------------------->
@@ -245,7 +245,7 @@
 
                   <!--bust------------------------------------------------------------->
                   <div class="illust_item">
-                     <h4 class="illust_item_name">Busto / Avatar</h4>
+                     <h3 class="title">Busto / Avatar</h3>
                      <div class="illust_item_card">
                         <!--image-->
                         <img src="./assets/img/bust_1.png" alt="exemplo">
@@ -265,7 +265,7 @@
                   </div>
                   <!--half body------------------------------------------------------------->
                   <div class="illust_item">
-                     <h4 class="illust_item_name">Meio corpo</h4>
+                     <h3 class="title">Meio corpo</h3>
                      <div class="illust_item_card">
                         <!--image-->
                         <img src="./assets/img/half_1.png" alt="exemplo">
@@ -285,7 +285,7 @@
                   </div>
                   <!--full body------------------------------------------------------------->
                   <div class="illust_item">
-                     <h4 class="illust_item_name">Corpo inteiro</h4>
+                     <h3 class="title">Corpo inteiro</h3>
                      <div class="illust_item_card">
                         <!--image-->
 
@@ -304,6 +304,7 @@
                         </div>
                      </div>
                   </div>
+
                </div>
             </div>
 
@@ -401,7 +402,7 @@
                      <h4>Alterações</h4>
                   </label>
                   <div class="answer">
-                        <p>Pedidos de alteração durante a fase de rascunho não têm custo adicional.</p>
+                     <p>Pedidos de alteração durante a fase de rascunho não têm custo adicional.</p>
                      <h5>Após a finalização da arte:</h5>
                      <ul class="list arrowlist">
                         <li>Para pequenas alterações: R$ 5,00 a R$ 10,00. Exemplo: mudanças de cores, reposicionamento
@@ -441,7 +442,7 @@
                   </label>
                   <div class="answer">
                      <p>
-                       <h5>Cancelamentos por parte dos clientes:</h5>
+                     <h5>Cancelamentos por parte dos clientes:</h5>
                      </p>
                      <ul class="list arrowlist">
                         <li>Antes da aprovação dos rascunhos: O cliente é elegível para um reembolso total caso decida
@@ -497,44 +498,55 @@
       <!-- ========== CONTACT ========== -->
       <section id="contact">
          <div class="container">
-            <h2>Contato</h2>
-            <p class="paragraph">Sinta-se à vontade para entrar em contato conosco para obter mais informações,
-               esclarecer
-               dúvidas ou solicitar comissões. Recomendamos que você verifique os tipos de trabalhos que somos capazes
-               de realizar e revise os termos de serviço, cujas informações estão disponíveis nas seções anteriores.</p>
-            <!--form-->
-            <form action="https://formsubmit.co/lumadart@outlook.com" method="POST">
-               <!--CC-->
-               <input type="hidden" name="_cc" value="another@email.com">
-               <!--Subject-->
-               <input type="hidden" name="_subject" value="Novo pedido de comissão ou dúvida">
-               <!--auto response-->
-               <input type="hidden" name="_autoresponse"
-                  value="Obrigado pelo contato. Em breve retornaremos com a resposta">
-               <!--thanks page-->
-               <input type="hidden" name="_next" value="https://lumadart.github.io/PaginaComissao/thankspage">
-               <div class="form_column">
-                  <!--nome-->
+
+            <div class="contact_columns">
+               <div class="contact_txt">
+                  <h2>Contato</h2>
+                  <p class="paragraph">Sinta-se à vontade para entrar em contato conosco para obter mais informações,
+                     esclarecer
+                     dúvidas ou solicitar comissões. Recomendamos que você verifique os tipos de trabalhos que somos
+                     capazes
+                     de realizar e revise os termos de serviço, cujas informações estão disponíveis nas seções
+                     anteriores.
+                  </p>
+               </div>
+
+               <!----------form----------->
+               <form action="https://formsubmit.co/lumadart@outlook.com" method="POST">
+                  <!--CC-->
+                  <input type="hidden" name="_cc" value="another@email.com">
+                  <!--Subject-->
+                  <input type="hidden" name="_subject" value="Novo pedido de comissão ou dúvida">
+                  <!--auto response-->
+                  <input type="hidden" name="_autoresponse" value="Obrigado pelo contato.">
+                  <!--thanks page-->
+                  <input type="hidden" name="_next" value="https://lumadart.github.io/PaginaComissao/thankspage">
+
+                  <!----------nome---------->
                   <div class="form_group">
                      <input type="text" name="nome" id="nome" class="input_form" placeholder=" " autocomplete="off"
                         required>
                      <label for="nome" class="form_label">Nome</label>
                   </div>
-                  <!--email-->
+
+                  <!----------email---------->
                   <div class="form_group">
                      <input type="email" name="email" id="email" class="input_form" placeholder=" " autocomplete="off"
                         required>
                      <label for="email" class="form_label">E-mail</label>
                   </div>
-               </div>
-               <!--mensagem-->
-               <div class="form_group">
-                  <textarea name="message" id="msg" class="input_form" placeholder=" " required></textarea>
-                  <label for="msgm" class="form_label">Mensagem</label>
-               </div>
-               <button type="submit" class="btn btn1">Enviar</button>
-            </form>
-         </div>
+
+
+                  <!----------mensagem---------->
+                  <div class="form_group">
+                     <textarea name="message" id="msg" class="input_form" placeholder=" " required></textarea>
+                     <label for="msg" class="form_label">Mensagem</label>
+                  </div>
+
+                  <button type="submit" class="btn btn2">Enviar</button>
+               </form>
+
+            </div>
          </div>
       </section>
 
@@ -552,7 +564,7 @@
                <div class="card_member" id="junicard">
                   <img src="./assets/img/avatarjunisquare.png" alt="avatar Juni">
                   <div class="info_card">
-                     <h4>Junigami</h4>
+                     <h4 class="title">Junigami</h4>
                      <p>Função: animação , design.</p>
                      <!--links-->
                      <ul class="social_card">
@@ -570,7 +582,7 @@
                <div class="card_member" id="lumacard">
                   <img src="./assets/img/avatarlumasquare.png" alt="">
                   <div class="info_card">
-                     <h4>Lumadart</h4>
+                     <h4 class="title">Lumadart</h4>
                      <p>Função: ilustração, design.</p>
                      <!--links-->
                      <ul class="social_card">
@@ -589,15 +601,13 @@
    <footer>
       <section class="footer">
          <div class="container">
-            <p>&copy 2023. Comissões Junigami & Lumadart.Todos os direitos reservados.</p>
-            <p><i class="fa-solid fa-code"></i> por Lumadart + Junigami</p>
-
-
+            <p><i class="fa-regular fa-copyright"></i> 2023. Comissões Junigami & Lumadart.Todos os direitos reservados.
+            </p>
+            <p><i class="fa-solid fa-code"></i> por Lumadart <i class="fa-solid fa-plus"></i> Junigami</p>
          </div>
       </section>
 
    </footer>
-   <!-- ========== SCRIPTS ========== -->
 </body>
 
 </html>
