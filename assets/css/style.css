@@ -156,7 +156,6 @@ h2::after {
 h3 {
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 2rem;
 }
 
 h4 {
@@ -170,6 +169,7 @@ h5 {
 
 .title {
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 /*----------------------------------------
@@ -272,7 +272,7 @@ BOX SHADOW
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background-image:var(--gradient01);
+    background-image: var(--gradient01);
     border-radius: var(--border-radius);
 }
 
@@ -282,9 +282,9 @@ CONTAINER
 
 .container {
     margin: 0 auto;
-    width: 1040px;
+    width: 1000px;
     max-width: 100%;
-    padding: 4rem 2rem;
+    padding: 40px 0;
 }
 
 /*----------------------------------------
@@ -362,11 +362,12 @@ PRODUCTS
     display: flex;
     gap: 4rem;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     margin-top: 4rem;
 }
 
- /*estilo para cards da sessão-*/
+/*estilo para cards da sessão-*/
 #products .card {
     background-color: var(--light-bg2);
     display: flex;
@@ -396,7 +397,6 @@ PRODUCTS
     height: 580px;
     padding: 30px;
     gap: 2rem;
-    margin: 0 auto;
 }
 
 /*-cabeçalho do item-*/
@@ -427,11 +427,18 @@ PRODUCTS
     background-color: var(--red);
 }
 
+/*-imagens menores-*/
+.small_image {
+    max-height: 112px;
+    width: auto;
+}
+
 /*-preços-*/
 .stream_item .price {
     display: flex;
     gap: 4rem;
 }
+
 .details {
     font-size: 1rem;
 }
@@ -448,11 +455,11 @@ hr {
 .pre_made {
     background-color: var(--light-bg2);
     border-radius: var(--border-radius);
+    min-width: 450px;
     width: 100%;
     padding: 20px;
     display: flex;
-    flex-basis: 100%;
-    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -463,9 +470,6 @@ hr {
     width: 100%;
 }
 
-.pre_made h3 {
-    margin: 0;
-}
 
 /* ---------- ilustrações ---------- */
 
@@ -491,11 +495,9 @@ hr {
     justify-content: space-between;
     gap: 4rem;
 }
-
 .do_dont_column {
-    width: 100%;
+    min-width: 450px;
 }
-
 /*-icons-*/
 .do_dont_illust .do {
     margin-right: 1rem;
@@ -604,6 +606,10 @@ CONTACTO
 }
 
 /* ---------- formulário ---------- */
+form {
+    margin: 0 auto;
+}
+
 .form_group {
     width: 450px;
     position: relative;
@@ -672,6 +678,7 @@ SOBRE
     flex-wrap: wrap;
     gap: 4rem;
     margin: 2rem auto 0;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -679,9 +686,10 @@ SOBRE
     background-color: var(--light-bg3);
     border-radius: var(--border-radius);
     padding: 20px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    max-width: 480px;
+    max-width: 450px;
     width: 100%;
     gap: 2rem;
 }
@@ -774,13 +782,13 @@ SOBRE
 /*----------------------------------------
 RODAPÉ
 ----------------------------------------*/
-.footer {
+#footer {
     background: var(--dark-bg);
     position: relative;
     color: var(--light-txt);
 }
 
-.footer .container {
+#footer .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -831,4 +839,25 @@ PÁGINA DE AGRADECIMENTO
 .thanks_msg i {
     font-size: 4rem;
     color: var(--yellow);
+}
+
+@media (max-width:1050px) {
+
+    #hero .container,
+    #welcome .container,
+    .stream_products,
+    .illustration_products,
+    .pre_made,
+    .do_dont_illust,
+    #terms .container,
+    .contact_columns,
+    #about .container,
+    #footer .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        margin: 0 auto;
+    }
+
 }
