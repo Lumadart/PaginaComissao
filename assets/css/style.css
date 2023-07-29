@@ -49,8 +49,6 @@ textarea {
     /*cor status*/
     --green: #42a23d;
     --red: #e80010;
-    /*box shadow-*/
-    --box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;
     /*-border-radius-*/
     --border-radius: 5px
 }
@@ -256,7 +254,7 @@ BOX SHADOW
  ---------------------------------------- */
 .shadow_box {
     border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* ----------------------------------------
@@ -269,12 +267,12 @@ BOX SHADOW
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--light-bg2);
+    background: var(--dark-bg);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--dark-bg);
+    background-image:var(--gradient01);
     border-radius: var(--border-radius);
 }
 
@@ -288,11 +286,6 @@ CONTAINER
     max-width: 100%;
     padding: 4rem 2rem;
 }
-
-/*----------------------------------------
-HEADER
-----------------------------------------*/
-
 
 /*----------------------------------------
 HERO
@@ -311,10 +304,6 @@ HERO
 
 #hero h1 {
     letter-spacing: .5rem;
-}
-
-#hero h4 {
-    letter-spacing: 1rem;
 }
 
 #hero h3 {
@@ -376,6 +365,7 @@ PRODUCTS
     justify-content: space-between;
     margin-top: 4rem;
 }
+
  /*estilo para cards da sessão-*/
 #products .card {
     background-color: var(--light-bg2);
@@ -399,6 +389,7 @@ PRODUCTS
     transform: translateX(-50%);
 }
 
+/*- cards itens stream-*/
 .stream_item .card {
     width: 100%;
     max-width: 480px;
@@ -408,28 +399,15 @@ PRODUCTS
     margin: 0 auto;
 }
 
-.stream_item_header {
+/*-cabeçalho do item-*/
+.stream_item .item_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.price {
-    display: flex;
-    gap: 4rem;
-}
-.details {
-    font-size: 1rem;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: var(--light-bg1);
-}
-
-/* ---------- Status ---------- */
-.status {
+/*-status-*/
+.stream_item .status {
     width: 100px;
     font-weight: bold;
     font-size: 1rem;
@@ -449,7 +427,24 @@ hr {
     background-color: var(--red);
 }
 
-/* ---------- pre made ---------- */
+/*-preços-*/
+.stream_item .price {
+    display: flex;
+    gap: 4rem;
+}
+.details {
+    font-size: 1rem;
+}
+
+/*-linha divisão-*/
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--light-bg1);
+}
+
+
+/* ---------- pre feitos ---------- */
 .pre_made {
     background-color: var(--light-bg2);
     border-radius: var(--border-radius);
@@ -472,7 +467,7 @@ hr {
     margin: 0;
 }
 
-/* ---------- illustrations ---------- */
+/* ---------- ilustrações ---------- */
 
 .illust_item {
     max-width: 300px;
@@ -490,7 +485,7 @@ hr {
     padding: 3rem;
 }
 
-/* ---------- do and dont ---------- */
+/* ---------- o que fazemos ---------- */
 .do_dont_illust {
     display: flex;
     justify-content: space-between;
@@ -513,7 +508,7 @@ hr {
 }
 
 /*----------------------------------------
-TERMS
+TERMOS DE SERVIÇOS
 ----------------------------------------*/
 #terms {
     background-color: var(--dark-bg);
@@ -599,7 +594,7 @@ TERMS
 
 
 /*----------------------------------------
-CONTACT
+CONTACTO
 ----------------------------------------*/
 
 .contact_columns {
@@ -608,7 +603,7 @@ CONTACT
     margin-top: 3rem;
 }
 
-/* ---------- form ---------- */
+/* ---------- formulário ---------- */
 .form_group {
     width: 450px;
     position: relative;
@@ -627,7 +622,7 @@ CONTACT
     opacity: .4;
 }
 
-/* ---------- label animation ---------- */
+/* ---------- label animatição ---------- */
 .input_form:focus~.form_label,
 .input_form:valid~.form_label,
 .input_form:not(:placeholder-shown)~.form_label {
@@ -666,7 +661,7 @@ form .bnt1 {
 
 
 /*----------------------------------------
-ABOUT
+SOBRE
 ----------------------------------------*/
 #about {
     background: var(--light-bg2);
@@ -777,7 +772,7 @@ ABOUT
 }
 
 /*----------------------------------------
-FOOTER
+RODAPÉ
 ----------------------------------------*/
 .footer {
     background: var(--dark-bg);
@@ -798,7 +793,7 @@ FOOTER
 
 
 /* ----------------------------------------
-THANKS PAGE
+PÁGINA DE AGRADECIMENTO
  ---------------------------------------- */
 .thanks_page {
     height: 100vh;
