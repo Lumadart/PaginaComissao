@@ -52,7 +52,7 @@ textarea {
     /*box shadow-*/
     --box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;
     /*-border-radius-*/
-    --border-radius:5px
+    --border-radius: 5px
 }
 
 /*----------------------------------------
@@ -231,6 +231,7 @@ BUTTON
     background: var(--purple);
     color: var(--light-txt);
 }
+
 .btn1:hover {
     background: var(--yellow);
     color: var(--dark-txt);
@@ -244,9 +245,18 @@ BUTTON
     background: var(--purple);
     color: var(--light-txt);
 }
+
 .btn2:hover {
     background: var(--yellow);
     color: var(--dark-txt);
+}
+
+/* ----------------------------------------
+BOX SHADOW
+ ---------------------------------------- */
+.shadow_box {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ----------------------------------------
@@ -318,6 +328,7 @@ HERO
 #hero .container img {
     width: 600px;
 }
+
 /*----------------------------------------
 WELCOME
 ----------------------------------------*/
@@ -365,40 +376,36 @@ PRODUCTS
     justify-content: space-between;
     margin-top: 4rem;
 }
-
-.stream_item {
-    max-width: 480px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.stream_item .title {
-    margin-bottom: 2rem;
-}
-
-.stream_item_card {
-    min-height: 580px;
+ /*estilo para cards da sessão-*/
+#products .card {
     background-color: var(--light-bg2);
-    padding: 30px 40px;
-    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     position: relative;
-    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
-.stream_item_card::after {
+.card::after {
     content: '';
+    position: absolute;
     height: .5rem;
-    width: 20rem;
-    left: 50%;
+    width: 50%;
     bottom: 0;
     margin: 0;
     background: var(--yellow);
-    position: absolute;
     border-radius: 10px 10px 0 0;
+    left: 50%;
     transform: translateX(-50%);
+}
+
+.stream_item .card {
+    width: 100%;
+    max-width: 480px;
+    height: 580px;
+    padding: 30px;
+    gap: 2rem;
+    margin: 0 auto;
 }
 
 .stream_item_header {
@@ -407,17 +414,12 @@ PRODUCTS
     justify-content: space-between;
 }
 
-.stream_item_price {
+.price {
     display: flex;
     gap: 4rem;
 }
-
-.item_price_style_2 {
-    width: 100%;
-}
-
-.item_price_style .small {
-    font-size: 1.1rem;
+.details {
+    font-size: 1rem;
 }
 
 hr {
@@ -428,16 +430,14 @@ hr {
 
 /* ---------- Status ---------- */
 .status {
-    font-weight: bolder;
+    width: 100px;
+    font-weight: bold;
     font-size: 1rem;
     line-height: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
     text-align: center;
     letter-spacing: .1rem;
-    width: 100px;
+    text-transform: uppercase;
     border-radius: 20px;
-    text-indent: 0;
     color: var(--light-txt);
 }
 
@@ -461,7 +461,6 @@ hr {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    box-shadow: var(--box-shadow);
 }
 
 .pre_made .btn {
@@ -481,36 +480,11 @@ hr {
     margin: 0 auto;
 }
 
-.illust_item_card {
-    background-color: var(--light-bg2);
-    padding: 0;
-    border-radius: var(--border-radius);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    box-shadow: var(--box-shadow);
-}
-
-.illust_item_card::after {
-    content: '';
-    height: .5rem;
-    width: 10rem;
-    left: 50%;
-    bottom: 0;
-    margin: 0;
-    background: var(--yellow);
-    position: absolute;
-    border-radius: 10px 10px 0 0;
-    transform: translateX(-50%);
-}
-
 .illust_item_card img {
     min-height: 300px;
     height: auto;
     object-fit: cover;
 }
-
 
 .illust_item_price {
     padding: 3rem;
@@ -715,7 +689,6 @@ ABOUT
     max-width: 480px;
     width: 100%;
     gap: 2rem;
-    box-shadow: var(--box-shadow);
 }
 
 /*avatar*/
@@ -755,6 +728,7 @@ ABOUT
     margin: 0;
     position: absolute;
 }
+
 /* ---------- links ---------- */
 .social_card {
     display: flex;
