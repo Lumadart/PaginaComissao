@@ -59,7 +59,7 @@ Body HTML
 body {
     font-family: 'neosans', sans-serif;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
     background: var(--light-bg1) url(../img/bgpattern.png);
@@ -291,12 +291,16 @@ CONTAINER
 HERO
 ----------------------------------------*/
 #hero {
-    background-image: linear-gradient(to left, #4A254B, #715533);
+    background-image: url(../img/hero1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #hero .container {
     min-height: 65vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--light-txt);
@@ -312,10 +316,6 @@ HERO
     margin: 2rem 0;
     border-radius: var(--border-radius);
     border: 2px solid var(--light-bg3);
-}
-
-#hero .container img {
-    width: 600px;
 }
 
 /*----------------------------------------
@@ -440,7 +440,7 @@ PRODUCTS
 }
 
 .details {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 /*-linha divisão-*/
@@ -489,23 +489,25 @@ hr {
     padding: 3rem;
 }
 
-/* ---------- o que fazemos ---------- */
-.do_dont_illust {
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-}
-.do_dont_column {
-    min-width: 450px;
-}
-/*-icons-*/
-.do_dont_illust .do {
-    margin-right: 1rem;
-    color: var(--green);
+/* ---------- notas ---------- */
+.illustration_notes {
+    width: 100%;
 }
 
-.do_dont_illust .dont {
-    margin-right: 1rem;
+/*-colunas-*/
+.illustration__dos {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.illustration__do,
+.illustration__dont {
+    width: 100%;
+}
+.illustration__do i {
+    color: var(--green); 
+}
+.illustration__dont i {
     color: var(--red);
 }
 
@@ -841,14 +843,15 @@ PÁGINA DE AGRADECIMENTO
     color: var(--yellow);
 }
 
-@media (max-width:1050px) {
+/*- responsivo -*/
 
-    #hero .container,
+@media (max-width:1050px) {
     #welcome .container,
     .stream_products,
     .illustration_products,
     .pre_made,
-    .do_dont_illust,
+    .illustration_notes,
+    .illustration__dos,
     #terms .container,
     .contact_columns,
     #about .container,
