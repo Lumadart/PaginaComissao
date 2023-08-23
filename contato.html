@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--estilo-->
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <!--FontAwesome-->
+   <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
+   <!--favicon-->
+   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+   <title>Contato - Juni e Luma</title>
+</head>
+
+<body>
+   <header>
+      <div id="hero">
+         <div class="container inner">
+
+            <!-- ========== NAVIGATION ========== -->
+            <nav>
+               <div class="logo">
+                  <a href="./index.html">
+                     <img src="./assets/img/logo_500.png" alt="">
+                     <h3>Juni & Luma</h3>
+                  </a>
+               </div>
+               <ul class="nav_links">
+                  <li><a href="./index.html">Início</a></li>
+                  <li><a href="./termos.html">Termos</a></li>
+                  <li><a class="active" href="./contato.html">Contato</a></li>
+                  <li><a href="./sobre.html">Sobre</a></li>
+               </ul>
+            </nav>
+
+         </div>
+      </div>
+   </header>
+
+   <main class="inner_pages">
+
+      <!-- ========== CONTACT ========== -->
+      <section id="contact">
+         <div class="container">
+
+            <h2 class="section_title">Contato</h2>
+
+            <div class="contact_columns">
+               <div class="contact__column">
+                  <p class="paragraph">Sinta-se à vontade para entrar em contato conosco para obter mais informações,
+                     esclarecer
+                     dúvidas ou solicitar comissões. Recomendamos que você verifique os tipos de trabalhos que somos
+                     capazes
+                     de realizar e revise os termos de serviço, cujas informações estão disponíveis nas seções
+                     anteriores.
+                  </p>
+               </div>
+
+               <!----------form----------->
+               <div class="contact__column">
+                  <form action="https://formsubmit.co/lumadart@outlook.com" method="POST">
+                     <!--CC-->
+                     <input type="hidden" name="_cc" value="another@email.com">
+                     <!--Subject-->
+                     <input type="hidden" name="_subject" value="Novo pedido de comissão ou dúvida">
+                     <!--auto response-->
+                     <input type="hidden" name="_autoresponse" value="Obrigado pelo contato.">
+                     <!--thanks page-->
+                     <input type="hidden" name="_next" value="https://lumadart.github.io/PaginaComissao/thankspage">
+
+                     <!----------nome---------->
+                     <div class="form_group">
+                        <input type="text" name="nome" id="nome" class="input_form" placeholder=" " autocomplete="off"
+                           required>
+                        <label for="nome" class="form_label">Nome</label>
+                     </div>
+
+                     <!----------email---------->
+                     <div class="form_group">
+                        <input type="email" name="email" id="email" class="input_form" placeholder=" "
+                           autocomplete="off" required>
+                        <label for="email" class="form_label">E-mail</label>
+                     </div>
+
+
+                     <!----------mensagem---------->
+                     <div class="form_group">
+                        <textarea name="message" id="msg" class="input_form" placeholder=" " required></textarea>
+                        <label for="msg" class="form_label">Mensagem</label>
+                     </div>
+
+                     <button type="submit" class="btn btn2">Enviar</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <!-- ========== FOOTER ========== -->
+   <footer>
+      <section id="footer">
+         <div class="container">
+            <p><i class="fa-regular fa-copyright"></i> 2023. Comissões Junigami & Lumadart.</p>
+         </div>
+      </section>
+   </footer>
+</body>
+
+</html>
