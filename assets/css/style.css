@@ -1,21 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700&display=swap');
-/*font-family: 'Nunito', sans-serif;*/
-
-@font-face {
-    /*-regular-*/
-    font-family: neosans;
-    font-weight: 400;
-    src: url(../fonts/neosansproregular-webfont.woff2) format('woff2');
-    src: url(../fonts/neosansproregular-webfont.woff) format('woff');
-}
-
-@font-face {
-    /*-bold-*/
-    font-family: neosans;
-    font-weight: 600;
-    src: url(../fonts/neosanspromedium-webfont.woff2) format('woff2');
-    src: url(../fonts/neosanspromedium-webfont.woff) format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
 
 /* ---------- reset ---------- */
 *,
@@ -44,19 +27,29 @@ textarea {
     --light-bg1: #e6e6e6;
     --light-bg2: #f6f6f6;
     --light-bg3: #ffffff;
-    
+
     /*colors*/
     --purple: #8C429C;
     --yellow: #E8B163;
-    /*gradients*/
-    --gradient01: linear-gradient(111.3deg, var(--purple) 9.6%, var(--yellow) 93.6%);
+
     /*cor status*/
     --green: #6cca67;
     --red: #f04c4c;
+
+    /*gradients*/
+    --gradient01: linear-gradient(111.3deg, var(--purple) 9.6%, var(--yellow) 93.6%);
+
+    /*font-weight*/
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-800: 800;
+
     /*border-radius*/
     --border-radius: 5px;
+
     /*box shadow*/
-    --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    --bshadow-p: 0 4px 0px #52265c;
+    --bshadow-y: 0 2px 0px #b99461;
 }
 
 /*----------------------------------------
@@ -64,7 +57,7 @@ Body HTML
 ----------------------------------------*/
 body {
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
+    font-weight: var(--fw-400);
     font-size: 1.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
@@ -105,50 +98,54 @@ a:hover {
     border-bottom: 1px solid var(--yellow);
 }
 
-.external::after {
-    content: '\f08e';
-    font-family: 'FontAwesome';
-    font-size: 1rem;
-    top: 0;
-    right: 0;
-    padding: 0 .5rem;
-}
-
 /*----------------------------------------
-HEADLINES
+BUTTON
 ----------------------------------------*/
-h1 {
-    font-size: 6.5rem;
-    font-weight: 700;
+.btn {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
+    text-align: center;
+    line-height: 1rem;
+    font-weight: var(--fw-700);
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+    background: var(--purple);
+    color: var(--light-txt);
+    box-shadow: var(--bshadow-p);
 }
 
-h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
+.btn:hover {
+    background: var(--yellow);
+    color: var(--dark-txt);
+    box-shadow: var(--bshadow-y);
+    transform: translateY(2px);
 }
 
-h3 {
-    font-size: 2rem;
-    font-weight: 700;
+/* ---------- styles ---------- */
+
+/*- 01 fixed width -*/
+.btn1 {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-h4 {
-    font-size: 1.8rem;
-    font-weight: 700;
+/*- 02 -*/
+.btn2 {
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    background: transparent;
+    background: var(--purple);
+    color: var(--light-txt);
 }
 
-h5 {
-    font-size: 1.5rem;
-}
-
-/*----------------------------------------
-PARAGRAPH
-----------------------------------------*/
-.paragraph {
-    text-indent: 2rem;
-}
 
 /* ----------------------------------------
 LISTS
@@ -164,7 +161,7 @@ li {
 
 li::marker {
     /*-icon color-*/
-    font-weight: 600;
+    font-weight: var(--fw-700);
     color: var(--purple);
 }
 
@@ -175,60 +172,100 @@ li::marker {
     font-family: 'FontAwesome';
     letter-spacing: 1rem;
     color: var(--purple);
-
 }
 
 .subtopic {
     margin-left: 20px;
 }
 
+/*----------------------------------------
+HEADLINES
+----------------------------------------*/
+h1 {
+    font-size: 6.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: var(--fw-800);
+}
+
+/*- font weight -*/
+h1,
+h2,
+h3 {
+    font-weight: var(--fw-700);
+}
 
 /*----------------------------------------
-BUTTON
+TITLES
 ----------------------------------------*/
-.btn {
-    display: block;
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
+/*- just uppercase-*/
+.title {
     text-transform: uppercase;
-    text-align: center;
-    line-height: 1rem;
-    font-weight: 600;
-    border-radius: 5px;
-    transition: .4s;
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
 }
 
-/* ---------- styles ---------- */
-.btn1 {
-    height: 60px;
-    line-height: 60px;
+/*-yellow line below-*/
+.section_title {
+    font-size: 2.5rem;
+    font-weight: var(--fw-700);
+    margin-bottom: 4rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.section_title::after {
+    content: '';
+    height: .3rem;
+    width: 6rem;
+    left: 0;
+    bottom: -1.5rem;
+    margin: 0;
+    background: var(--yellow);
+    border-radius: 10px;
+    position: absolute;
+}
+
+/*-star left + line right-*/
+.title_div {
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+/*-star-*/
+.title_div::before {
+    content: "\2726";
+    position: absolute;
+    left: 0;
+    color: var(--yellow);
+}
+
+/*-line-*/
+.title_div::after {
+    content: '';
+    height: 1px;
     width: 100%;
-    max-width: 450px;
-    background: var(--purple);
-    color: var(--light-txt);
-    margin: 0 auto;
-    text-align: center;
+    margin: 10px 20px 0;
+    background: var(--light-bg1);
+    border-radius: 10px;
+    position: absolute;
 }
 
-.btn1:hover {
-    background: var(--yellow);
-    color: var(--dark-txt);
-}
-
-.btn2 {
-    height: 40px;
-    line-height: 40px;
-    width: 120px;
-    background: transparent;
-    background: var(--purple);
-    color: var(--light-txt);
-}
-
-.btn2:hover {
-    background: var(--yellow);
-    color: var(--dark-txt);
+/*----------------------------------------
+PARAGRAPH
+----------------------------------------*/
+.paragraph {
+    text-indent: 2rem;
 }
 
 /* ----------------------------------------
@@ -241,14 +278,15 @@ BUTTON
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--dark-bg);
+    background: var(--light-bg1);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--light-bg1);
+    background: var(--yellow);
     border-radius: var(--border-radius);
 }
+
 
 /*----------------------------------------
 MAIN
@@ -296,61 +334,6 @@ CONTAINER
     align-items: center;
 }
 
-/*----------------------------------------
-TITLES
-----------------------------------------*/
-/*- just uppercase-*/
-.title {
-    text-transform: uppercase;
-}
-
-/*-yellow line below-*/
-.section_title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 4rem;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.section_title::after {
-    content: '';
-    height: .3rem;
-    width: 6rem;
-    left: 0;
-    bottom: -1.5rem;
-    margin: 0;
-    background: var(--yellow);
-    border-radius: 10px;
-    position: absolute;
-}
-
-/*-star left + line right-*/
-.title_div {
-    text-transform: uppercase;
-    position: relative;
-    padding-left: 30px;
-    overflow:hidden ;
-}
-
-/*-star-*/
-.title_div::before {
-    content: "\2726";
-    position: absolute;
-    left: 0;
-    color: var(--yellow);
-}
-
-/*-line-*/
-.title_div::after {
-    content: '';
-    height: 1px;
-    width: 100%;
-    margin:10px 20px 0;
-    background: var(--light-bg1);
-    border-radius: 10px;
-    position: absolute;
-}
 
 /*----------------------------------------
 HERO
@@ -375,10 +358,6 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 90px;
-}
-
-.index nav {
-    border-bottom: 1px solid var(--yellow);
 }
 
 /*-logotipo-*/
@@ -413,7 +392,7 @@ nav {
 }
 
 .nav_links a {
-    font-weight: 700;
+    font-weight: var(--fw-700);
     padding: 20px 0;
     color: var(--light-txt);
     transition: .4s;
@@ -429,7 +408,7 @@ nav {
 .active::before {
     content: "\f0d8";
     font-family: 'FontAwesome';
-    bottom: -25px;
+    bottom: -26px;
     font-size: 5rem;
     left: 50%;
     color: var(--light-bg2);
@@ -449,15 +428,8 @@ nav {
 }
 
 .hero_subtitle {
-    text-transform: uppercase;
     letter-spacing: .1rem;
     line-height: 4rem;
-}
-
-.hero_txt {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 #hero p {
@@ -481,25 +453,30 @@ FEATURES
     overflow: hidden;
     border-radius: var(--border-radius);
     background-color: var(--light-bg3);
+    transition: .4s;
 }
 
-.feat_title{
+.feature__column:hover {
+    transform: scale(1.02) translateY(-4px);
+}
+
+.feat_title {
     text-align: center;
     margin: 10px 0;
 }
 
-
 .feat_img {
-    width: 320px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
-    object-position: top;
+    overflow: hidden;
 }
 
 .feat_img img {
     width: 100%;
     height: auto;
 }
+
 /*----------------------------------------
 ITENS
 ----------------------------------------*/
@@ -513,10 +490,11 @@ ITENS
 .obs .title_div {
     margin-bottom: 40px;
 }
+
 /*-status-*/
 .stream_graphics .status {
     width: 100px;
-    font-weight: bold;
+    font-weight: var(--fw-700);
     font-size: 1.2rem;
     text-align: center;
     letter-spacing: .1rem;
@@ -537,6 +515,7 @@ ITENS
 .item_illustration img {
     border-radius: var(--border-radius);
 }
+
 .stream_graphics img {
     max-width: 480px;
     width: 100%;
@@ -548,13 +527,15 @@ ITENS
     font-size: 1.2rem;
 }
 
- .item_valor span{
-    font-weight: 700;
+.item_valor span {
+    font-weight: var(--fw-700);
 }
+
 .item_valor {
     position: relative;
     margin-top: 10px;
 }
+
 .item_valor :not(:last-child)::after {
     content: "\2223";
     margin: 0 10px;
@@ -587,9 +568,6 @@ TOS
 
 /*-menu-*/
 .menu_accordion {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
     width: 100%;
     margin-top: 20px;
 }
@@ -617,9 +595,9 @@ TOS
 }
 
 .question label {
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
+    font-size: 1.5rem;
     letter-spacing: .1rem;
     padding: 20px 0 10px;
     margin: 0;
@@ -680,7 +658,6 @@ form {
 }
 
 .form_group {
-
     position: relative;
     margin-bottom: 20px;
 }
@@ -737,17 +714,11 @@ form .bnt1 {
 /*----------------------------------------
 ABOUT
 ----------------------------------------*/
-.about_columns {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 .about_card {
     border-radius: var(--border-radius);
 }
+
 .about__column {
     max-width: 500px;
     width: 100%;
@@ -760,12 +731,11 @@ ABOUT
 
 #lumacard {
     background: var(--light-bg3) url(../img/lumaprofilebg.png) center top no-repeat;
-
 }
 
 .about_avatar {
     max-width: 200px;
-    width: 100%;;
+    width: 100%;
     height: auto;
     border-radius: 50%;
     margin: 20px auto 0;
@@ -810,7 +780,7 @@ RODAPÉ
 #footer {
     background: var(--light-bg1);
     color: var(--dark-txt);
-    font-weight: 700;
+    font-weight: var(--fw-800);
     position: relative;
 }
 
@@ -823,10 +793,6 @@ RODAPÉ
 }
 
 #footer .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 1rem;
     text-transform: uppercase;
     font-size: 1rem;
@@ -885,7 +851,7 @@ PÁGINA DE AGRADECIMENTO
     color: var(--yellow);
 }
 
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1180px) {
 
     .container {
         max-width: 520px;
