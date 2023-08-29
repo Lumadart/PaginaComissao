@@ -182,11 +182,11 @@ li::marker {
 HEADLINES
 ----------------------------------------*/
 h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h3 {
@@ -217,7 +217,7 @@ TITLES
 .section_title {
     font-size: 2.5rem;
     font-weight: var(--fw-700);
-    margin-bottom: 4rem;
+    margin-bottom: 20px;
     position: relative;
     text-transform: uppercase;
 }
@@ -450,7 +450,7 @@ nav {
 FEATURES
 ----------------------------------------*/
 .features_columns {
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -567,6 +567,7 @@ NOTES
     color: var(--red);
     font-size: 1.5rem;
 }
+
 
 /*----------------------------------------
 TOS
@@ -819,47 +820,49 @@ RODAPÉ
 /* ----------------------------------------
 PÁGINA DE AGRADECIMENTO
  ---------------------------------------- */
+
 .thanks_page {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.thanks_msg {
-    width: 100%;
-    min-height: 50vh;
-    padding: 4rem;
-    background: var(--light-bg2);
-    border-radius: var(--border-radius);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     position: relative;
-    overflow: hidden;
+    background-image: url(../img/bg_hero_20.jpg);
+    background-position: top center;
+    background-repeat: repeat;
 }
 
-/*-gradient-*/
-.thanks_msg::before {
-    content: "";
+#thanks__page .container {
     position: absolute;
-    width: 100%;
-    top: 0;
-    height: 6px;
-    background: var(--gradient01);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--light-bg3);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    text-align: center;
 }
 
-.thanks_msg i {
+#thanks__page .container i {
     font-size: 4rem;
-    color: var(--yellow);
+    padding: 30px;
+    border-radius: 50%;
+    color: var(--light-bg1);
+    background-image: var(--gradient01);
 }
 
 @media screen and (max-width: 1180px) {
 
+    .inner_pages {
+        min-height: calc(100vh - 160px);
+    }
+
     .container {
         max-width: 520px !important;
+    }
+
+    nav {
+        height: 120px;
+    }
+
+    .active::before {
+        bottom: -13px;
     }
 }
