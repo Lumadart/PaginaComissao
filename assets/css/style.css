@@ -240,6 +240,7 @@ TITLES
     position: relative;
     padding-left: 30px;
     overflow: hidden;
+
 }
 
 /*-star-*/
@@ -255,7 +256,7 @@ TITLES
     content: '';
     height: 1px;
     width: 100%;
-    margin: 10px 20px 0;
+    margin: 12px 20px 0;
     background: var(--light-bg1);
     border-radius: 10px;
     position: absolute;
@@ -492,6 +493,10 @@ ITENS
     gap: 40px;
 }
 
+.stream_graphics .card_info {
+    max-width: 500px;
+    width: 100%;
+}
 .stream_graphics .title_div,
 .obs .title_div {
     margin-bottom: 40px;
@@ -523,7 +528,7 @@ ITENS
 }
 
 .stream_graphics img {
-    max-width: 480px;
+    max-width: 500px;
     width: 100%;
 }
 
