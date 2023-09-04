@@ -37,7 +37,8 @@ textarea {
     --red: #f04c4c;
 
     /*gradients*/
-    --gradient01: linear-gradient(111.3deg, var(--purple) 9.6%, var(--yellow) 93.6%);
+    --gradient01: linear-gradient(45deg, var(--purple), var(--yellow));
+    --gradient02: linear-gradient(45deg,#8c429c6e, #e8b16369);
 
     /*font-weight*/
     --fw-400: 400;
@@ -456,32 +457,55 @@ FEATURES
 }
 
 .feature__column {
-    max-width: 320px;
+    width: 320px;
+    height: 250px;
     overflow: hidden;
     border-radius: var(--border-radius);
-    background-color: var(--light-bg3);
+    background-color: var(--gradient01);
     transition: .4s;
+    position: relative;
+    background-size: cover;
+    background-position: top center;
+    box-shadow: var(--bshadow-p);
+
 }
 
 .feature__column:hover {
-    transform: scale(1.02) translateY(-4px);
+    transform: translateY(2px);
+    box-shadow: var(--bshadow-y);
 }
 
+.features_columns .status {
+    position: absolute;
+    top:10px;
+    right:10px;
+}
 .feat_title {
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    color: var(--light-bg3);
+    position: absolute;
     text-align: center;
-    margin: 10px 0;
+    font-weight: var(--fw-700);
+    background-color: var(--purple);
+    transition: .4s;
 }
 
-.feat_img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    overflow: hidden;
+.feature__column:hover .feat_title {
+    background-color: var(--yellow);
 }
 
-.feat_img img {
-    width: 100%;
-    height: auto;
+#feat_01 {
+    background-image:var(--gradient02), url(../img/ilust.png);
+}
+
+#feat_02 {
+    background-image:var(--gradient02), url(../img/graphics.png);
+}
+
+#feat_03 {
+    background-image:var(--gradient02), url(../img/samplescreen.png);
 }
 
 /*----------------------------------------
@@ -504,13 +528,14 @@ ITENS
     max-width: 500px;
     width: 100%;
 }
+
 .stream_graphics .title_div,
 .obs .title_div {
     margin-bottom: 40px;
 }
 
 /*-status-*/
-.status{
+.status {
     width: 100px;
     font-weight: var(--fw-700);
     font-size: 1.2rem;
@@ -870,6 +895,7 @@ PÁGINA DE AGRADECIMENTO
         max-width: 520px !important;
     }
 
+    /*-navbar-*/
     nav {
         height: 120px;
     }
@@ -878,6 +904,7 @@ PÁGINA DE AGRADECIMENTO
         bottom: -13px;
     }
 
+    /*-illustrations item prices-*/
     .item_valor {
         flex-direction: column;
         gap: 0px;
