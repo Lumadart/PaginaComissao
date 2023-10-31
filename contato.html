@@ -11,44 +11,46 @@
    <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
    <!--favicon-->
    <link rel="shortcut icon" href="./assets/img/logo_ico.ico" type="image/x-icon">
-   <title>Contato - Juni e Luma</title>
+   <title>Contato • ✦ studio</title>
 </head>
 
 <body>
-   <header>
-      <div id="hero">
-         <div class="container inner">
 
-            <!-- ========== NAVIGATION ========== -->
-            <nav>
-               <div class="logo">
-                  <a href="./index.html">
-                     <img src="./assets/img/logo_500.png" alt="Imagem logotipo">
-                  </a>
-               </div>
-               <ul class="nav_links">
-                  <li><a href="./index.html">Início</a></li>
-                  <li><a href="./termos.html">Termos</a></li>
-                  <li><a class="active" href="./contato.html">Contato</a></li>
-                  <li><a href="./sobre.html">Sobre</a></li>
-               </ul>
-            </nav>
+   <!-- ========== HEADER ========== -->
+   <header id="header" class="header--inner">
+      <div class="container ">
 
-         </div>
+         <nav class="header__nav">
+            <!--logo-->
+            <div class="header__nav-logo">
+               <a href="./index.html">
+                  <img src="./assets/img/logo_dg.png" alt="Imagem logotipo">
+               </a>
+            </div>
+            <!--nav menu-->
+            <ul class="header__nav-links">
+               <li><a href="./index.html">Início</a></li>
+               <li><a href="./termos.html">Termos</a></li>
+               <li><a class="header__nav-links--active" href="./contato.html">Contato</a></li>
+               <li><a href="./sobre.html">Sobre</a></li>
+            </ul>
+
+         </nav>
+
       </div>
    </header>
 
-   <main class="inner_pages">
+   <main>
 
       <!-- ========== CONTACT ========== -->
       <section id="contact">
-         <div class="container">
+         <div class="container inner_pages">
 
-            <h2 class="section_title_middle">Contato</h2>
+            <h2 class="section__title--center">Contato</h2>
 
-            <div class="contact_content">
+            <div class="contact-form fc--40">
 
-               <p class="paragraph">Sinta-se à vontade para entrar em contato conosco para obter mais informações ou
+               <p class="paragraph">Sinta-se à vontade para entrar em contato para obter mais informações ou
                   esclarecer dúvidas.
                </p>
 
@@ -64,29 +66,29 @@
                   <input type="hidden" name="_next" value="https://lumadart.github.io/PaginaComissao/obrigado">
 
                   <!----------nome---------->
-                  <div class="form_group">
-                     <input type="text" name="nome" id="nome" class="input_form" placeholder=" " autocomplete="off"
+                  <div class="contact-form__group">
+                     <input type="text" name="nome" id="nome" class="contact-form__input" placeholder=" " autocomplete="off"
                         required>
-                     <label for="nome" class="form_label">Nome</label>
+                     <label for="nome" class="contact-form__label">Nome</label>
                   </div>
 
                   <!----------email---------->
-                  <div class="form_group">
-                     <input type="email" name="email" id="email" class="input_form" placeholder=" " autocomplete="off"
+                  <div class="contact-form__group">
+                     <input type="email" name="email" id="email" class="contact-form__input" placeholder=" " autocomplete="off"
                         required>
-                     <label for="email" class="form_label">E-mail</label>
+                     <label for="email" class="contact-form__label">E-mail</label>
                   </div>
 
 
                   <!----------mensagem---------->
-                  <div class="form_group">
-                     <textarea name="message" id="msg" class="input_form" placeholder=" " required></textarea>
-                     <label for="msg" class="form_label">Mensagem</label>
+                  <div class="contact-form__group">
+                     <textarea name="message" id="msg" class="contact-form__input" placeholder=" " required></textarea>
+                     <label for="msg" class="contact-form__label">Mensagem</label>
                   </div>
 
                   <button type="submit" class="btn btn2">Enviar</button>
                </form>
-               
+
             </div>
 
          </div>
@@ -97,8 +99,8 @@
    <!-- ========== FOOTER ========== -->
    <footer>
       <section id="footer">
-         <div class="container flex__wrap__20 space__between">
-            <p><i class="fa-regular fa-copyright"></i> 2023. Comissões Junigami & Lumadart.</p>
+         <div class="container fw--20 space__between">
+            <p><i class="fa-regular fa-copyright"></i> 2023. ✦ studio.</p>
          </div>
       </section>
    </footer>

@@ -9,55 +9,59 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!--FontAwesome-->
   <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
-   <!--favicon-->
-   <link rel="shortcut icon" href="./assets/img/logo_ico.ico" type="image/x-icon">
-  <title>Termos de serviço - Juni e Luma</title>
+  <!--favicon-->
+  <link rel="shortcut icon" href="./assets/img/logo_ico.ico" type="image/x-icon">
+  <title>Termos de serviço • ✦ studio</title>
 </head>
 
 <body>
-  <header>
-    <div id="hero">
-      <div class="container inner">
 
-        <!-- ========== NAVIGATION ========== -->
-        <nav>
-          <div class="logo">
-            <a href="./index.html">
-              <img src="./assets/img/logo_500.png" alt="Imagem logotipo">
-            </a>
-          </div>
-          <ul class="nav_links">
-            <li><a href="./index.html">Início</a></li>
-            <li><a class="active" href="./termos.html">Termos</a></li>
-            <li><a href="./contato.html">Contato</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-          </ul>
-        </nav>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="header--inner">
+    <div class="container ">
 
-      </div>
+      <nav class="header__nav">
+        <!--logo-->
+        <div class="header__nav-logo">
+          <a href="./index.html">
+            <img src="./assets/img/logo_dg.png" alt="Imagem logotipo">
+          </a>
+        </div>
+        <!--nav menu-->
+        <ul class="header__nav-links">
+          <li><a href="./index.html">Início</a></li>
+          <li><a class="header__nav-links--active" href="./termos.html">Termos</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+        </ul>
+
+      </nav>
+
     </div>
   </header>
 
-  <main class="inner_pages">
+  <main>
 
 
     <!-- ========== TERMS ========== -->
     <section id="terms">
-      <div class="container">
+      <div class="container inner_pages">
 
-        <h2 class="section_title_middle">Termos de serviço</h2>
+        <h2 class="section__title--center">Termos de serviço</h2>
 
-        <p class="paragraph">Ao solicitar nossos serviços, você concorda em respeitar esses termos. Fique à vontade para ler os detalhes e, se surgirem dúvidas, não hesite em entrar em <a class="l_under" href="./contato.html">contato</a>. </p>
+        <p class="paragraph">Ao solicitar nossos serviços, você concorda em respeitar esses termos. Fique à vontade para
+          ler os detalhes e, se surgirem dúvidas, não hesite em entrar em <a class="l_under"
+            href="./contato.html">contato</a>. </p>
 
-        <div class="menu_accordion flex__column__20">
+        <div class="terms-items fc--20">
 
           <!--01-- general-->
-          <div class="question">
-            <input type="radio" name="accordion" id="first">
-            <label for="first">
+          <div class="term-item__question">
+            <input type="radio" name="tos-item" id="first-item">
+            <label for="first-item">
               <h4>Informações gerais</h4>
             </label>
-            <div class="answer">
+            <div class="term-item__answer">
               <ul class="list arrowlist">
                 <li>Nos reservamos do direito de recusar pedidos de comissão, principalmente os que não estão de acordo
                   com nossa proposta.</li>
@@ -74,15 +78,16 @@
           </div>
 
           <!--02--work flow-->
-          <div class="question">
-            <input type="radio" name="accordion" id="second">
-            <label for="second">
+          <div class="term-item__question">
+            <input type="radio" name="tos-item" id="second-item">
+            <label for="second-item">
               <h4> Fluxo de trabalho</h4>
             </label>
-            <div class="answer">
+            <div class="term-item__answer">
               <ol class="list">
                 <li>Ao recebermos o pedido atravéz do formulário, analizaremos se seremos capazes de fazê-lo.</li>
-                <li>Responderemos ao cliente, e caso possamos atender ao pedido, iremos responder ao cliente já com o orçamento.
+                <li>Responderemos ao cliente, e caso possamos atender ao pedido, iremos responder ao cliente já com o
+                  orçamento.
                 </li>
                 <li>Após a aprovação do orçamento pelo cliente, solicitaremos mais referências e informações, além de
                   50% do valor total para iniciar o trabalho.</li>
@@ -97,12 +102,12 @@
           </div>
 
           <!--03 changes-->
-          <div class="question">
-            <input type="radio" name="accordion" id="third">
-            <label for="third">
+          <div class="term-item__question">
+            <input type="radio" name="tos-item" id="third-item">
+            <label for="third-item">
               <h4>Alterações</h4>
             </label>
-            <div class="answer">
+            <div class="term-item__answer">
               <ul class="list arrowlist">
                 <li>O cliente pode fazer até 05 alterações antes da aprovação dos designs. Taxas adicionais serão
                   aplicadas para modificações posteriores, caso isto seja viável.</li>
@@ -120,12 +125,12 @@
           </div>
 
           <!--04 payment-->
-          <div class="question">
-            <input type="radio" name="accordion" id="fourth">
-            <label for="fourth">
+          <div class="term-item__question">
+            <input type="radio" name="tos-item" id="fourth-item">
+            <label for="fourth-item">
               <h4>Pagamentos</h4>
             </label>
-            <div class="answer">
+            <div class="term-item__answer">
               <ul class="list arrowlist">
                 <li>Solicitamos 50% do valor total para iniciar o trabalho e os 50% restantes para efetuar a entrega.
                 </li>
@@ -139,12 +144,12 @@
           </div>
 
           <!--05 cancel-->
-          <div class="question">
-            <input type="radio" name="accordion" id="fifth">
-            <label for="fifth">
+          <div class="term-item__question">
+            <input type="radio" name="tos-item" id="fifth-item">
+            <label for="fifth-item">
               <h4>Cancelamentos e reembolsos</h4>
             </label>
-            <div class="answer">
+            <div class="term-item__answer">
 
               <ul class="list arrowlist">
                 <li>O cliente tem um prazo de 48 horas após o pagamento inicial ser confirmado para ser elegível a um
@@ -165,12 +170,12 @@
           </div>
 
           <!--06 rights-->
-          <div class="question">
-            <input type="radio" name="accordion" id="sixth">
-            <label for="sixth">
+          <div class="term-item__question">
+            <input type="radio" name="tos-item" id="sixth-item">
+            <label for="sixth-item">
               <h4>Usos & direitos das artes</h4>
             </label>
-            <div class="answer">
+            <div class="term-item__answer">
               <ul class="list arrowlist">
                 <li>Os artistas possuem os direitos autorais das artes e podem usá-la para divulgação em redes sociais e
                   portfólios.</li>
@@ -189,7 +194,7 @@
 
         </div>
         <br>
-        <p class="item_detail">Data da última modificação: 21 / 08 / 2023</p>
+        <h6>Data da última modificação: 21 / 08 / 2023</h6>
       </div>
     </section>
 
@@ -198,9 +203,9 @@
   <!-- ========== FOOTER ========== -->
   <footer>
     <section id="footer">
-      <div class="container  flex__wrap__20 space__between">
-        <p><i class="fa-regular fa-copyright"></i> 2023. Comissões Junigami & Lumadart.</p>
-        <a href="#hero">Topo <i class="fa-solid fa-up-long"></i></a>
+      <div class="container  fw--20 space__between">
+        <p><i class="fa-regular fa-copyright"></i> 2023. ✦ studio.</p>
+        <a class=" to_top" href="#header"><i class="fa-solid fa-circle-chevron-up"></i></a>
       </div>
     </section>
   </footer>

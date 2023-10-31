@@ -11,85 +11,68 @@
    <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
    <!--favicon-->
    <link rel="shortcut icon" href="./assets/img/logo_ico.ico" type="image/x-icon">
-   <title>Comissões - Juni e Luma</title>
+   <title>✦ studio</title>
 </head>
 
 <body>
+   <!-- ==================== HEADER ==================== -->
+   <header id="header" class="header--index">
+      <div class="container ">
 
-   <!-- ========== HEADER ========== -->
-   <header>
-      <!-- ========== HERO ========== -->
-      <section id="hero">
-         <div class="container index">
-
-            <!-- ========== NAVIGATION ========== -->
-            <nav>
-               <div class="logo">
-                  <a href="./index.html">
-                     <img src="./assets/img/logo_500.png" alt="Imagem logotipo">
-                  </a>
-
-               </div>
-               <ul class="nav_links">
-                  <li><a href="./index.html">Início</a></li>
-                  <li><a href="./termos.html">Termos</a></li>
-                  <li><a href="./contato.html">Contato</a></li>
-                  <li><a href="./sobre.html">Sobre</a></li>
-               </ul>
-            </nav>
-
-            <div class="hero_content flex__wrap__40">
-
-               <div class="hero_txt flex__column__20">
-                  <h1 class="hero_title title">Comissões</h1>
-                  <h2 class="hero_subtitle">Ilustrações e <br> Gráficos para streams</h2>
-               </div>
-
-               <img src="./assets/img/cover chibis.png" alt="Imagem do chibis Luma e Juni">
+         <nav class="header__nav">
+            <!--logo-->
+            <div class="header__nav-logo">
+               <a href="./index.html">
+                  <img src="./assets/img/logo_dg.png" alt="Imagem logotipo">
+               </a>
             </div>
+            <!--nav menu-->
+            <ul class="header__nav-links">
+               <li><a class="header__nav-links--active" href="./index.html">Início</a></li>
+               <li><a href="./termos.html">Termos</a></li>
+               <li><a href="./contato.html">Contato</a></li>
+               <li><a href="./sobre.html">Sobre</a></li>
+            </ul>
 
+         </nav>
 
+         <div class="header__hero">
+            <div class="header___hero--txt">
+               <h2>Olá, bem vindos ao</h2>
+               <h1>Nome do Studio</h1>
+               
+            </div>
          </div>
-      </section>
+
+
+      </div>
    </header>
 
-   <!-- ========== MAIN ========== -->
    <main>
+      <section id="products">
+         <div class="container fw--40 space__between">
 
-      <!-- ========== FEATURES ========== -->
-      <section id="features">
-         <div class="container">
-
-            <div class="features_columns flex__wrap__40">
-
-               <a href="./ilustracoes.html">
-                  <div id="feat_01" class="feature__column">
-                     <!--status-->
-                     <p class="status open">Aberto</p>
-                     <!-- <p class="status closed">fechado</p> -->
-                     <div class="feat_title">Ilustrações</div>                        
-                  </div>
-               </a>
-
-               <a href="./graficos.html">
-                  <div id="feat_02" class="feature__column">
-                     <!--status-->
-                     <p class="status open">Aberto</p>
-                     <!-- <p class="status closed">fechado</p> -->
-                     <p class="feat_title">Gráficos para streams</p>                        
-                  </div>
-               </a>
-
-               <a href="https://ko-fi.com/lumadart" target="_blank">
-                  <div id="feat_03" class="feature__column">
-                     <!--status-->
-                     <!-- <p class="status open">Aberto</p> -->
-                     <p class="status closed">fechado</p>
-                     <p class="feat_title">Itens prontos (P2U)</p>                        
-                  </div>
-               </a>
-
-            </div>
+            <a href="./ilustracoes.html">
+               <div class="product__item">
+                  <h3>Ilustrações</h3>
+                  <img class="product__image" src="./assets/img/illust_icon.png" alt="imagem ilustrativa do item">
+               </div>
+            </a><a href="./graficos.html">
+               <div class="product__item">
+                  <h3>Emotes <br> e badges</h3>
+                  <img class="product__image" src="./assets/img/graphics_icon.png" alt="imagem ilustrativa do item">
+               </div>
+            </a><a href="#">
+               <div class="product__item">
+                  <h3>PNGtuber</h3>
+                  <img class="product__image" src="./assets/img/pngtuber_icon.png" alt="imagem ilustrativa do item">
+               </div>
+            </a><a href="https://ko-fi.com/lumadart" target="_blank">
+               <div class="product__item">
+                  <h3>P2U</h3>
+                  <img class="product__image" src="./assets/img/graphics_icon.png" alt="imagem ilustrativa do item">
+               </div>
+            </a>
 
          </div>
       </section>
