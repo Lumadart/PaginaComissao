@@ -368,6 +368,11 @@ h3 {
     gap: 40px;
 }
 
+/*- logo -*/
+.header__nav-logo img {
+    height: 40px;
+    width: 40px;
+}
 /*-links -nav-*/
 .header__nav-links {
     display: flex;
