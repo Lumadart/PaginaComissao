@@ -10,28 +10,27 @@
    <!--FontAwesome-->
    <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
    <!--favicon-->
-   <link rel="shortcut icon" href="./assets/img/logo_ico.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="./assets/img/icon.ico" type="image/x-icon">
    <title>Contato • ✦ studio</title>
 </head>
 
 <body>
 
    <!-- ========== HEADER ========== -->
-   <header id="header" class="header--inner">
-      <div class="container ">
+   <header id="header">
+      <div class="container">
 
-         <nav class="header__nav">
+         <nav class="nav__header wrap space-b a-center g-20">
             <!--logo-->
-            <div class="header__nav-logo">
                <a href="./index.html">
-                  <img src="./assets/img/logo.png" " alt="Imagem logotipo">
+                  <img class="logo" src="./assets/img/logo.png" alt="Imagem logotipo">
                </a>
-            </div>
+
             <!--nav menu-->
-            <ul class="header__nav-links">
+            <ul class="nav__links">
                <li><a href="./index.html">Início</a></li>
                <li><a href="./termos.html">Termos</a></li>
-               <li><a class="header__nav-links--active" href="./contato.html">Contato</a></li>
+               <li><a class="nav__links--active" href="./contato.html">Contato</a></li>
                <li><a href="./sobre.html">Sobre</a></li>
             </ul>
 
@@ -48,10 +47,9 @@
 
             <h2 class="section__title--center">Contato</h2>
 
-            <div class="contact-form fc--40">
+            <div class="contact-form column g-40">
 
-               <p class="paragraph">Sinta-se à vontade para entrar em contato para obter mais informações ou
-                  esclarecer dúvidas.
+               <p class="subtitle">Não hesite em nos contatar para obter informações adicionais ou esclarecer dúvidas.
                </p>
 
                <!----------form----------->
@@ -67,15 +65,15 @@
 
                   <!----------nome---------->
                   <div class="contact-form__group">
-                     <input type="text" name="nome" id="nome" class="contact-form__input" placeholder=" " autocomplete="off"
-                        required>
+                     <input type="text" name="nome" id="nome" class="contact-form__input" placeholder=" "
+                        autocomplete="off" required>
                      <label for="nome" class="contact-form__label">Nome</label>
                   </div>
 
                   <!----------email---------->
                   <div class="contact-form__group">
-                     <input type="email" name="email" id="email" class="contact-form__input" placeholder=" " autocomplete="off"
-                        required>
+                     <input type="email" name="email" id="email" class="contact-form__input" placeholder=" "
+                        autocomplete="off" required>
                      <label for="email" class="contact-form__label">E-mail</label>
                   </div>
 
@@ -86,7 +84,7 @@
                      <label for="msg" class="contact-form__label">Mensagem</label>
                   </div>
 
-                  <button type="submit" class="btn btn2">Enviar</button>
+                  <button type="submit" class="btn btn1">Enviar</button>
                </form>
 
             </div>
@@ -97,12 +95,20 @@
    </main>
 
    <!-- ========== FOOTER ========== -->
-   <footer>
-      <section id="footer">
-         <div class="container fw--20 space__between">
-            <p><i class="fa-regular fa-copyright"></i> 2023. ✦ studio.</p>
+   <footer id="footer">
+      <div class="container wrap g-20 space-b a-center">
+
+         <div class="credits wrap g-20 a-center">
+            <a href="./index.html">
+               <img src="./assets/img/logo.png" alt="Imagem logotipo">
+            </a>
+            <p>D'art Studio. <i class="fa-regular fa-copyright"></i> 2023. </p>
          </div>
-      </section>
+
+         <span><i class="fa-solid fa-code"></i> por Lumadart</span>
+
+         </div>
+      </div>
    </footer>
 </body>
 

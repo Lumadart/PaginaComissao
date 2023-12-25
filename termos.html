@@ -10,35 +10,34 @@
   <!--FontAwesome-->
   <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
   <!--favicon-->
-  <link rel="shortcut icon" href="./assets/img/logo_ico.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/icon.ico" type="image/x-icon">
   <title>Termos de serviço • ✦ studio</title>
 </head>
 
 <body>
 
   <!-- ========== HEADER ========== -->
-  <header id="header" class="header--inner">
-    <div class="container ">
+  <header id="header">
+    <div class="container">
 
-      <nav class="header__nav">
-        <!--logo-->
-        <div class="header__nav-logo">
-          <a href="./index.html">
-            <img src="./assets/img/logo.png" " alt="Imagem logotipo">
-          </a>
-        </div>
-        <!--nav menu-->
-        <ul class="header__nav-links">
-          <li><a href="./index.html">Início</a></li>
-          <li><a class="header__nav-links--active" href="./termos.html">Termos</a></li>
-          <li><a href="./contato.html">Contato</a></li>
-          <li><a href="./sobre.html">Sobre</a></li>
-        </ul>
+       <nav class="nav__header wrap space-b a-center g-20">
+          <!--logo-->
+             <a href="./index.html">
+                <img class="logo" src="./assets/img/logo.png" alt="Imagem logotipo">
+             </a>
 
-      </nav>
+          <!--nav menu-->
+          <ul class="nav__links">
+             <li><a href="./index.html">Início</a></li>
+             <li><a class="nav__links--active" href="./termos.html">Termos</a></li>
+             <li><a href="./contato.html">Contato</a></li>
+             <li><a href="./sobre.html">Sobre</a></li>
+          </ul>
+
+       </nav>
 
     </div>
-  </header>
+ </header>
 
   <main>
 
@@ -49,11 +48,10 @@
 
         <h2 class="section__title--center">Termos de serviço</h2>
 
-        <p class="paragraph">Ao solicitar nossos serviços, você concorda em respeitar esses termos. Fique à vontade para
-          ler os detalhes e, se surgirem dúvidas, não hesite em entrar em <a class="l_under"
-            href="./contato.html">contato</a>. </p>
+        <p class="subtitle">Ao nos comissionar, você concorda com os termos a seguir. Não hesite em entrar em <a
+            class="l_under" href="./contato.html">contato</a> caso surja alguma dúvida. </p>
 
-        <div class="terms-items fc--20">
+        <div class="terms-items column g-20">
 
           <!--01-- general-->
           <div class="term-item__question">
@@ -63,14 +61,14 @@
             </label>
             <div class="term-item__answer">
               <ul class="list arrowlist">
-                <li>Nos reservamos do direito de recusar pedidos de comissão, principalmente os que não estão de acordo
-                  com nossa proposta.</li>
+                <li>Reservamo-nos o direito de rejeitar solicitações de comissão, especialmente aquelas que não estejam
+                  alinhadas com nossa proposta.</li>
                 <li>O estilo das artes segue o padrão apresentado nas bases e exemplos. Não emulamos estilo de outros
                   artistas.</li>
-                <li>Os valores apresentados são valores base e podem ser ajustados de acordo com a complexidade do
-                  trabalho solicitado.</li>
+                <li>Os valores indicados são valores iniciais e podem ser adaptados conforme a complexidade do serviço
+                  requisitado.</li>
                 <li>Conheça as diretrizes da sua plataforma de stream. Não haverá reembolso /alterações gratuitas para
-                  artes que forem rejeitadas.</li>
+                  artes não aprovadas pelas mesmas.</li>
                 <li>Podemos fazer alterações nos termos a qualquer momento dependendo da necessidade.</li>
               </ul>
 
@@ -93,8 +91,10 @@
                   50% do valor total para iniciar o trabalho.</li>
                 <li>Apresentaremos um esboço do projeto ao cliente para que possam ser feitas as alterações necessárias;
                   daremos continuidade somente após a aprovação do cliente.</li>
-                <li>Ao concluir o projeto, compartilharemos uma versão de baixa resolução com o cliente. Será solicitado
-                  o pagamento dos 50% restantes para efetuar a entrega.
+                <li>Ao concluir o projeto, compartilharemos uma versão em baixa resolução do trabalho finalizado com o
+                  cliente, afim de verificar se o projeto está conforme o planejado. Será solicitado
+                  o pagamento dos 50% restantes para efetuar a entrega. Qualquer alteração a partir desta etapa
+                  acarretará em custos adicionais.
                 </li>
                 <li>É de extrema importância que o cliente mantenha uma cópia segura de seu pedido.</li>
               </ol>
@@ -194,6 +194,7 @@
 
         </div>
         <br>
+        <br>
         <h6>Data da última modificação: 21 / 08 / 2023</h6>
       </div>
     </section>
@@ -201,14 +202,23 @@
   </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer>
-    <section id="footer">
-      <div class="container  fw--20 space__between">
-        <p><i class="fa-regular fa-copyright"></i> 2023. ✦ studio.</p>
-        <a class=" to_top" href="#header"><i class="fa-solid fa-circle-chevron-up"></i></a>
-      </div>
-    </section>
-  </footer>
+
+  <footer id="footer">
+    <div class="container wrap g-20 space-b a-center">
+
+       <div class="credits wrap g-20 a-center">
+          <a href="./index.html">
+             <img src="./assets/img/logo.png" alt="Imagem logotipo">
+          </a>
+          <p>D'art Studio. <i class="fa-regular fa-copyright"></i> 2023. </p>
+       </div>
+
+       <span><i class="fa-solid fa-code"></i> por Lumadart</span>
+
+       </div>
+    </div>
+ </footer>
+
 </body>
 
 </html>

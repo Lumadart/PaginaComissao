@@ -10,35 +10,34 @@
   <!--FontAwesome-->
   <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
   <!--favicon-->
-  <link rel="shortcut icon" href="./assets/img/logo_ico.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/icon.ico" type="image/x-icon">
   <title>Sobre • ✦ studio</title>
 </head>
 
 <body>
 
   <!-- ========== HEADER ========== -->
-  <header id="header" class="header--inner">
-    <div class="container ">
+  <header id="header">
+    <div class="container">
 
-      <nav class="header__nav">
-        <!--logo-->
-        <div class="header__nav-logo">
-          <a href="./index.html">
-            <img src="./assets/img/logo.png" alt="Imagem logotipo">
-          </a>
-        </div>
-        <!--nav menu-->
-        <ul class="header__nav-links">
-          <li><a href="./index.html">Início</a></li>
-          <li><a href="./termos.html">Termos</a></li>
-          <li><a href="./contato.html">Contato</a></li>
-          <li><a class="header__nav-links--active" href="./sobre.html">Sobre</a></li>
-        </ul>
+       <nav class="nav__header wrap space-b a-center g-20">
+          <!--logo-->
+             <a href="./index.html">
+                <img class="logo" src="./assets/img/logo.png" alt="Imagem logotipo">
+             </a>
 
-      </nav>
+          <!--nav menu-->
+          <ul class="nav__links">
+             <li><a href="./index.html">Início</a></li>
+             <li><a href="./termos.html">Termos</a></li>
+             <li><a href="./contato.html">Contato</a></li>
+             <li><a class="nav__links--active" href="./sobre.html">Sobre</a></li>
+          </ul>
+
+       </nav>
 
     </div>
-  </header>
+ </header>
 
   <main>
 
@@ -46,25 +45,25 @@
     <section id="about">
       <div class="container inner_pages">
 
-        <h2 class="section__title--center">Sobre</h2>
+        <h2 class="section__title--center">Nossa equipe</h2>
 
-        <div class="about fw--40">
+        <div class="about wrap g-40">
 
           <!--card-->
-          <div class="about__member">
-            <div id="juniabout" class="about__member-card">
+          <div class="card__item">
+            <div id="juniabout" class="card__item-card">
 
-              <div class="about__member-info">
+              <div class="card__item-info">
 
                 <!--avatar-->
-                <img class="about__member-avatar" src="./assets/img/avatarjunisquare.png" alt="avatar Juni">
+                <img class="card__item-avatar" src="./assets/img/avatarjunisquare.png" alt="avatar Juni">
 
                 <!--infos-->
-                <h4 class="about__member-name">Junigami</h4>
-                <p class="about__member-detail">Responsável pelas animações e design dos projetos.</p>
+                <h4 class="card__item-name">Junigami</h4>
+                <p class="card__item-detail">Responsável pelas animações e design dos projetos.</p>
 
                 <!--links-->
-                <ul class="about__member-links">
+                <ul class="card__item-links">
                   <li><a class="social_link" href="https://twitter.com/Junigami" target="_blank"><i
                         class="fa-brands fa-x-twitter"></i></a></li>
                   <li><a class="social_link" href="https://www.artstation.com/junigami" target="_blank"><i
@@ -72,7 +71,8 @@
                   <li><a class="social_link" href="https://www.twitch.tv/junigami" target="_blank"><i
                         class="fa-brands fa-twitch"></i></a>
                   </li>
-                  <li><a href="https://junigamigh.github.io/Junigami-Profiles/" target="_blank">Portfolio</a></li>
+                  <li><a class="port" href="https://junigamigh.github.io/Junigami-Profiles/"
+                      target="_blank">Portfólio</a></li>
                 </ul>
 
               </div>
@@ -81,20 +81,20 @@
           <!--end card-->
 
           <!--card-->
-          <div class="about__member">
-            <div id="lumaabout" class="about__member-card">
+          <div class="card__item">
+            <div id="lumaabout" class="card__item-card">
 
-              <div class="about__member-info">
+              <div class="card__item-info">
 
                 <!--avatar-->
-                <img class="about__member-avatar" src="./assets/img/avatarlumasquare.png" alt="avatar Luma">
+                <img class="card__item-avatar" src="./assets/img/avatarlumasquare.png" alt="avatar Luma">
 
                 <!--infos-->
-                <h4 class="about__member-name">Luma D'art</h4>
-                <p class="about__member-detail">Responsável pelas ilustrações e design dos projetos.</p>
+                <h4 class="card__item-name">Luma D'art</h4>
+                <p class="card__item-detail">Responsável pelas ilustrações e design dos projetos.</p>
 
                 <!--links-->
-                <ul class="about__member-links">
+                <ul class="card__item-links">
                   <li><a href="https://www.instagram.com/lumadart/" target="_blank"><i
                         class="fa-brands fa-instagram"></i></a></li>
                   <li><a href="https://www.twitter.com/lumadart" target="_blank"><i
@@ -103,7 +103,7 @@
                         class="fa-brands fa-artstation"></i></a></li>
                   <li><a href="https://www.twitch.com/lumadart" target="_blank"><i class="fa-brands fa-twitch"></i></a>
                   </li>
-                  <li><a href="#" target="_blank">Portfolio (em breve)</a></li>
+                  <li><a class="port" href="#" target="_blank">Portfólio (em breve)</a></li>
                 </ul>
               </div>
             </div>
@@ -118,13 +118,21 @@
   </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer>
-    <section id="footer">
-      <div class="container fw--20 space__between">
-        <p><i class="fa-regular fa-copyright"></i> 2023. ✦ studio.</p>
-      </div>
-    </section>
-  </footer>
+  <footer id="footer">
+    <div class="container wrap g-20 space-b a-center">
+
+       <div class="credits wrap g-20 a-center">
+          <a href="./index.html">
+             <img src="./assets/img/logo.png" alt="Imagem logotipo">
+          </a>
+          <p>D'art Studio. <i class="fa-regular fa-copyright"></i> 2023. </p>
+       </div>
+
+       <span><i class="fa-solid fa-code"></i> por Lumadart</span>
+
+       </div>
+    </div>
+ </footer>
 </body>
 
 </html>

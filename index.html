@@ -10,25 +10,24 @@
    <!--FontAwesome-->
    <script src="https://kit.fontawesome.com/caf89de716.js" crossorigin="anonymous"></script>
    <!--favicon-->
-   <link rel="shortcut icon" href="./assets/img/logo_ico.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="./assets/img/icon.ico" type="image/x-icon">
    <title>✦ studio</title>
 </head>
 
 <body>
    <!-- ==================== HEADER ==================== -->
-   <header id="header" class="header--index">
-      <div class="container ">
+   <header id="header">
+      <div class="container">
 
-         <nav class="header__nav">
+         <nav class="nav__header wrap space-b a-center g-20">
             <!--logo-->
-            <div class="header__nav-logo">
                <a href="./index.html">
-                  <img src="./assets/img/logo.png" alt="Imagem logotipo">
+                  <img class="logo" src="./assets/img/logo.png" alt="Imagem logotipo">
                </a>
-            </div>
+
             <!--nav menu-->
-            <ul class="header__nav-links">
-               <li><a class="header__nav-links--active" href="./index.html">Início</a></li>
+            <ul class="nav__links">
+               <li><a class="nav__links--active" href="./index.html">Início</a></li>
                <li><a href="./termos.html">Termos</a></li>
                <li><a href="./contato.html">Contato</a></li>
                <li><a href="./sobre.html">Sobre</a></li>
@@ -36,49 +35,151 @@
 
          </nav>
 
-         <div class="header__hero">
-            <div class="header___hero--txt">
-               <h2>Olá, bem vindos à nossa página de </h2>
-               <h1>Comissões</h1>
-               <h3> / Ainda estmos sob construção</h3>
-               
-            </div>
-         </div>
-
-
       </div>
    </header>
 
-   <main>
-      <section id="products">
-         <div class="container fw--40 space__between">
+   <main class="index-page">
 
-            <a href="./ilustracoes.html">
-               <div class="product__item">
-                  <h3>Ilustrações</h3>
-                  <img class="product__image" src="./assets/img/illust_icon.png" alt="imagem ilustrativa do item">
+
+
+
+      <section id="hero">
+         <div class="header__hero wrap a-center j-center g-40">
+
+            <div class="header__hero--left column g-40">
+
+               <div class="header___hero--txt column g-40">
+                  <h1>D'art Studio</h1>
+                  <h2>Comissões de arte</h2>
+                  <p class="paragraph">Olá, sejam bem vind@s! Criamos esta página para divulgar os nossos trabalhos de comissão de artes. Aqui vocês encontrarão informações sobre o que fazemos e como trabalhamos. Estamos ansiosos para trabalhar com vocês e transformar suas idéias em artes incríveis! </p>
                </div>
-            </a><a href="./graficos.html">
-               <div class="product__item">
-                  <h3>Emotes <br> e badges</h3>
-                  <img class="product__image" src="./assets/img/graphics_icon.png" alt="imagem ilustrativa do item">
-               </div>
-            </a><a href="#">
-               <div class="product__item">
-                  <h3>PNGtuber</h3>
-                  <img class="product__image" src="./assets/img/pngtuber_icon.png" alt="imagem ilustrativa do item">
-               </div>
-            </a><a href="https://ko-fi.com/lumadart" target="_blank">
-               <div class="product__item">
-                  <h3>P2U</h3>
-                  <img class="product__image" src="./assets/img/graphics_icon.png" alt="imagem ilustrativa do item">
-               </div>
-            </a>
+
+               <a href="#products"><button class=" btn btn2"> Saiba mais <i
+                        class="fa-solid fa-plus fa-beat"></i></button></a>
+
+            </div>
+
+            <figure>
+               <img class="header__hero-img" src="./assets/img/heroimg.png" alt="">
+            </figure>
 
          </div>
       </section>
+
+      <section id="products">
+         <div class="container column a-center">
+
+            <h2 class="section__title--center">O que fazemos</h2>
+            <p class="subtitle">Atualmente estamos atendendo comissões de arte dos seguintes tipos :</p>
+
+
+            <div class="products wrap g-40 space-b j-center">
+
+               <!--card 01 - illustrations-->
+               <div class="card__item">
+
+                  <div id="illustrations" class="card__item-card">
+
+                     <img class="card__item--img" src="./assets/img/img1_illustration.png" alt="">
+
+                     <div class="card__item-info column g-20">
+                        <!--infos-->
+                        <h3 class="card__item-name ">Ilustrações</h3>
+                        <br>
+                        <p>Artes exclusivas no estilo padrão anime / mangá e em versão chibi.</p>
+
+                        <!--links-->
+                        <a href="./ilustracoes.html"><button class=" btn btn1"> Saiba mais</button></a>
+
+                     </div>
+
+
+                  </div>
+               </div>
+               <!--end card-->
+
+               <!--card 02 - Stream graphics-->
+               <div class="card__item">
+
+                  <div id="illustrations" class="card__item-card">
+
+                     <img class="card__item--img" src="./assets/img/img1_illustration.png" alt="">
+
+                     <div class="card__item-info column g-20">
+
+                        <!--infos-->
+                        <h3 class="card__item-name">Emotes & Badges</h3>
+                        <br>
+                        <p>Gráficos para personalizar seu canal e sua stream. </p>
+
+                        <!--links-->
+                        <a href="./graficos.html"><button class=" btn btn1"> Saiba mais</button></a>
+
+                     </div>
+
+
+                  </div>
+               </div>
+               <!--end card-->
+
+               <!--card 03 - PNG TUBER-->
+               <div class="card__item">
+
+                  <div id="illustrations" class="card__item-card">
+
+                     <img class="card__item--img" src="./assets/img/img1_illustration.png" alt="">
+
+                     <div class="card__item-info column g-20">
+
+                        <!--infos-->
+                        <h3 class="card__item-name">Modelos pngtuber</h3>
+                        <br>
+                        <p>Personagens únicos para usar em sua criação de conteúdo.</p>
+
+                        <!--links-->
+                        <a href="#products"><button class=" btn btn1"> Em breve</button></a>
+
+                     </div>
+
+
+                  </div>
+               </div>
+               <!--end card-->
+
+
+            </div>
+
+            <div class="p2u">
+               <div class="p2u__txt wrap g-40 space-b a-center">
+                  <h3>Produtos P2U</h3>
+
+                  <p>Itens pronta entrega! É só pagar, baixar e usar.</p>
+
+                  <a href="#products"><button class=" btn btn2"> Em breve!</button></a>
+               </div>
+            </div>
+         </div>
+
+      </section>
+
    </main>
 
+   <!-- ========== FOOTER ========== -->
+   <footer id="footer">
+      <div class="container wrap g-20 space-b a-center">
+
+         <div class="credits wrap g-20 a-center">
+            <a href="./index.html">
+               <img src="./assets/img/logo.png" alt="Imagem logotipo">
+            </a>
+            <p>D'art Studio. <i class="fa-regular fa-copyright"></i> 2023. </p>
+         </div>
+
+         <span><i class="fa-solid fa-code"></i> por Lumadart</span>
+
+         </div>
+      </div>
+   </footer>
 </body>
 
 </html>
