@@ -118,7 +118,7 @@ li::marker {
 }
 
 .subtopic {
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 /* ==================== HEADLINES ==================== */
@@ -154,7 +154,7 @@ h3 {
 .item-title {
     font-size: 2.5rem;
     font-weight: var(--fw-800);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     position: relative;
     text-transform: uppercase;
 }
@@ -167,7 +167,7 @@ h3 {
     bottom: -1.5rem;
     margin: 0;
     background: var(--yellow);
-    border-radius: 10px;
+    border-radius: 1rem;
     position: absolute;
 }
 
@@ -176,7 +176,7 @@ h3 {
 .section__title--center {
     font-size: 2.5rem;
     font-weight: var(--fw-800);
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     position: relative;
     text-transform: uppercase;
     text-align: center;
@@ -189,7 +189,7 @@ h3 {
     bottom: -1.5rem;
     margin: 0;
     background: var(--yellow);
-    border-radius: 10px;
+    border-radius: 1rem;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -197,14 +197,14 @@ h3 {
 
 .subtitle {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 /* ---------- star left + line right ---------- */
 .item-title--starline {
     text-transform: uppercase;
     position: relative;
-    padding-left: 30px;
+    padding-left: 3rem;
     overflow: hidden;
 }
 
@@ -219,11 +219,11 @@ h3 {
 /*-line-*/
 .item-title--starline::after {
     content: '';
-    height: 1px;
+    height: 0.1rem;
     width: 100%;
-    margin: 12px 20px 0;
+    margin: 1.2rem 2rem 0;
     background: var(--gray-bg1);
-    border-radius: 10px;
+    border-radius: 1rem;
     position: absolute;
 }
 
@@ -235,7 +235,7 @@ h3 {
 }
 
 hr {
-    border: 1px solid var(--gray-bg1);
+    border: 0.1rem solid var(--gray-bg1);
 }
 
 /* ==================== PARAGRAPH ==================== */
@@ -252,7 +252,7 @@ hr {
     text-align: center;
     line-height: 1rem;
     font-weight: var(--fw-800);
-    border-radius: 5px;
+    border-radius: 0.5rem;
     transition: .4s;
     cursor: pointer;
     background: var(--purple);
@@ -264,10 +264,10 @@ hr {
 
 /*- 01 fixed width -*/
 .btn1 {
-    height: 60px;
-    line-height: 60px;
+    height: 6rem;
+    line-height: 6rem;
     width: 100%;
-    max-width: 300px;
+    max-width: 30rem;
     margin: 0 auto;
     text-align: center;
     transition: .2s;
@@ -275,9 +275,9 @@ hr {
 
 /*- 02 -*/
 .btn2 {
-    height: 50px;
-    line-height: 50px;
-    padding: 0 50px;
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 5rem;
     background: transparent;
     background: var(--purple);
     color: var(--light-txt);
@@ -290,13 +290,13 @@ hr {
 }
 
 .btn i {
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 /* ==================== SCROLLBAR ==================== */
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 0.8rem;
 }
 
 /* Track */
@@ -315,13 +315,13 @@ hr {
     margin: 0 auto !important;
     max-width: 1160px !important;
     width: 100%;
-    padding: 40px 20px;
+    padding: 4rem 2rem;
 }
 
 /*---------- min height for inner pages ----------*/
 .inner_pages {
-    padding-top: 150px;
-    min-height: calc(100vh - 120px);
+    padding-top: 15rem;
+    min-height: calc(100vh - 12rem);
 }
 
 /*---------- flex box----------*/
@@ -351,15 +351,15 @@ hr {
 /*---------- gaps----------*/
 
 .g-20 {
-    gap: 20px;
+    gap: 2rem;
 }
 
 .g-40 {
-    gap: 40px;
+    gap: 4rem;
 }
 
 .g-60 {
-    gap: 60px;
+    gap: 6rem;
 }
 
 /* ==================== HEADER ====================*/
@@ -368,32 +368,33 @@ hr {
     position: fixed;
     top: 0;
     left: 0;
+    height: 8rem;
     width: 100%;
     background-color: var(--dark-bg2);
     z-index: 2;
 }
 
 #header .container {
-    padding: 20px;
+    padding: 2rem;
 }
 
 /*- logo -*/
 .logo {
-    height: 40px;
-    width: 40px;
+    height: 4rem;
+    width: 4rem;
 }
 
 /*- menu -nav -*/
 #nav__menu {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 6rem;
     list-style-type: none;
 }
 
 #nav__menu a {
     display: block;
-    padding: 8px;
+    padding: 0.8rem;
     transition: .4s;
     position: relative;
     color: var(--light-txt);
@@ -405,7 +406,7 @@ hr {
 
 .active::before {
     content: "\2726";
-    top: -15px;
+    top: -1.5rem;
     font-size: 1.5rem;
     left: 50%;
     color: var(--yellow);
@@ -422,32 +423,34 @@ hr {
 /* ==================== HERO ====================*/
 
 #hero {
-    margin: 0 auto !important;
-    max-width: 1300px !important;
+    padding: 0 2rem;
+    background-color: var(--dark-bg2);
     width: 100%;
-    padding: 0 20px;
 }
 
 .header__hero {
+    margin: 0 auto !important;
+    max-width: 1300px !important;
+    width: 100%;
     min-height: 100vh;
 }
 
 .header__hero--left {
-    max-width: 500px;
+    max-width: 50rem;
     width: 100%;
 }
 
 .header__hero-img {
-    max-width: 750px;
+    max-width: 75rem;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 /* ==================== PRODUCTS | index page ====================*/
 
 #products {
     min-height: 60vh;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 8rem;
 }
 
 /* ---------- P2U itens ---------- */
@@ -455,8 +458,8 @@ hr {
     width: 100%;
     background: var(--gray-bg1);
     border-radius: var(--border-radius);
-    margin-top: 60px;
-    padding: 40px;
+    margin-top: 6rem;
+    padding: 4rem;
     box-shadow: var(--box-shadow);
 }
 
@@ -478,7 +481,7 @@ hr {
 }
 
 .card__item {
-    max-width: 450px;
+    max-width: 45rem;
     width: 100%;
 }
 
@@ -493,15 +496,15 @@ hr {
 }
 
 .card__item-info {
-    padding: 40px;
+    padding: 4rem;
     text-align: center !important;
 }
 
 /* ==================== PRODUCTS ==================== */
 
 .products .card__item {
-    max-width: 340px;
-    height: 340px;
+    max-width: 34rem;
+    height: 34rem;
 }
 
 .products .card__item-info {
@@ -511,36 +514,36 @@ hr {
 }
 
 .products button {
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .products .card__item--img {
-    width: 400px;
-    opacity: .1;
+    width: 40rem;
+    opacity: 0.06;
     transition: .4s;
     
 }
 
 .products .card__item:hover .card__item--img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 
 /* ==================== ABOUT ==================== */
 
 .about .card__item {
-    max-width: 450px;
+    max-width: 45rem;
     box-shadow: var(--box-shadow);
 }
 
 /* ---------- avatar ---------- */
 .card__item-avatar {
-    max-width: 200px;
+    max-width: 20rem;
     width: 100%;
     height: auto;
     border-radius: 50%;
-    margin: 20px auto 0;
-    border: 10px solid var(--gray-bg1);
+    margin: 2rem auto 0;
+    border: 1rem solid var(--gray-bg1);
 }
 
 .about {
@@ -551,13 +554,13 @@ hr {
 .card__item-links {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1rem;
     list-style-type: none;
-    margin: 20px auto;
+    margin: 2rem auto;
 }
 
 .card__item-links a {
-    padding: 2px 7px;
+    padding: 0.2rem 0.7rem;
     border-radius: var(--border-radius);
     color: var(--dark-txt);
     font-weight: var(--fw-800);
@@ -597,13 +600,13 @@ hr {
 #comm-itens .container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .comm-graphic__emotes,
 .comm-graphic__badges {
     background-color: var(--gray-bg1);
-    padding: 40px;
+    padding: 4rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
@@ -618,20 +621,20 @@ hr {
 /*-status-*/
 .comm-item__status {
     background-color: var(--gray-bg1);
-    padding: 0px 20px;
-    height: 30px;
-    border-radius: 50px;
+    padding: 0 2rem;
+    height: 3rem;
+    border-radius: 5rem;
     text-transform: uppercase;
     font-size: 1rem;
 }
 
 .status {
-    width: 100px;
+    width: 10rem;
     font-weight: var(--fw-900);
     text-transform: uppercase;
     font-size: 1rem;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 5rem;
     color: var(--dark-txt);
 }
 
@@ -653,7 +656,7 @@ hr {
 }
 
 .comm__info--price {
-    margin: 40px;
+    margin: 4rem;
 }
 
 .comm__info--price span {
@@ -666,7 +669,7 @@ hr {
 
 /*images*/
 .comm__image-illust {
-    max-width: 800px;
+    max-width: 80rem;
     width: 100% !important;
     height: auto;
     display: block;
@@ -674,7 +677,7 @@ hr {
 }
 
 .comm__image-graphic {
-    max-width: 450px;
+    max-width: 45rem;
     width: 100%;
 }
 
@@ -683,7 +686,7 @@ NOTES
 ----------------------------------------*/
 .comm__notes--do,
 .comm__notes--dont {
-    max-width: 540px;
+    max-width: 54rem;
     width: 100% !important;
 }
 
@@ -703,7 +706,7 @@ NOTES
 /*-menu-*/
 .terms-items {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 /*-question-*/
@@ -711,7 +714,7 @@ NOTES
     color: var(--light-txt);
     background: var(--gray-bg1);
     position: relative;
-    padding: 10px 40px 20px;
+    padding: 1rem 4rem 2rem;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
@@ -725,7 +728,7 @@ NOTES
     align-items: center;
     font-size: 1.5rem;
     letter-spacing: .1rem;
-    padding: 20px 0 10px;
+    padding: 2rem 0 1rem;
     margin: 0;
     cursor: pointer;
 }
@@ -733,7 +736,7 @@ NOTES
 .term-item__question label::after {
     content: "\2726";
     position: absolute;
-    right: 40px;
+    right: 4rem;
     font-size: 2.5rem;
     color: var(--yellow);
     transition: .5s;
@@ -750,7 +753,7 @@ NOTES
 
 /*-answer-*/
 .term-item__question h5 {
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 .term-item__question .term-item__answer {
@@ -768,7 +771,7 @@ NOTES
 
 .contact-form {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 80rem;
     width: 100%;
 }
 
@@ -779,7 +782,7 @@ form {
 
 .contact-form__group {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 /* ---------- label ---------- */
@@ -789,8 +792,8 @@ form {
     font-weight: var(--fw-800);
     color: var(--yellow);
     line-height: 2rem;
-    left: 25px;
-    top: 12px;
+    left: 2.5rem;
+    top: 1.2rem;
     position: absolute;
     transition: .2s;
     cursor: text;
@@ -800,30 +803,30 @@ form {
 .contact-form__input:focus~.contact-form__label,
 .contact-form__input:valid~.contact-form__label,
 .contact-form__input:not(:placeholder-shown)~.contact-form__label {
-    top: -10px;
-    left: 15px;
+    top: -1rem;
+    left: 1.5rem;
     color: var(--yellow);
     background-color: var(--dark-bg1);
-    padding: 0px 10px;
+    padding: 0 1rem;
     opacity: 1;
 }
 
 /* ---------- input ---------- */
 .contact-form__input {
     width: 100% !important;
-    height: 45px;
-    padding: 15px 15px;
+    height: 4.5rem;
+    padding: 1.5rem 1.5rem;
     font-size: inherit;
     font-family: inherit;
     background-color: var(--dark-bg1);
     border-radius: var(--border-radius);
-    border: 1px solid var(--yellow);
+    border: 0.1rem solid var(--yellow);
     color: var(--light-txt);
 }
 
 /* ---------- textarea ---------- */
 .contact-form__group textarea {
-    min-height: 80px !important;
+    min-height: 8rem !important;
     resize: none;
     overflow: auto;
 }
@@ -835,14 +838,14 @@ form {
     font-weight: var(--fw-800);
     position: relative;
     margin-top: 4rem;
-    padding: 20px;
+    padding: 2rem;
 }
 
 #footer .container {
     padding: 0 1rem;
     text-transform: uppercase;
     font-size: 1rem;
-    min-height: 40px;
+    min-height: 4rem;
 }
 
 /* ---------- links ---------- */
@@ -856,8 +859,8 @@ form {
 
 /* ---------- logo ---------- */
 .credits img {
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
 }
 
 
@@ -865,9 +868,9 @@ form {
 #footer::after {
     content: "";
     width: 100%;
-    height: 4px;
+    height: 0.4rem;
     left: 0;
-    bottom: 0px;
+    bottom: 0;
     position: absolute;
     background-image: var(--gradient01);
 }
@@ -893,9 +896,9 @@ form {
 
 #thanks__page .container i {
     font-size: 4rem;
-    padding: 30px;
-    height: 100px;
-    width: 100px;
+    padding: 3rem;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
     color: var(--light-bg1);
     background-image: var(--gradient01);
@@ -908,24 +911,24 @@ form {
 @media screen and (max-width: 1380px) {
 
     .inner_pages {
-        min-height: calc(100vh - 300px);
+        min-height: calc(100vh - 12rem);
     }
 
     .container,
     .header__hero {
-        max-width: 520px !important;
+        max-width: 52rem !important;
         margin: 0 auto;
     }
 
     /*hero*/
     .header__hero {
-        margin-top: 160px;
-        gap: 40px
+        margin-top: 16rem;
+        gap: 4rem
     }
 
     .header__hero-img {
-        max-width: 520px;
-        margin-top: 0px;
+        max-width: 52rem;
+        margin-top: 0;
     }
 
     .active::before {
@@ -941,7 +944,7 @@ form {
         display: block;
         position: absolute;
         width: 100%;
-        top: 80px;
+        top: 8rem;
         left: 0;
         background: var(--dark-bg1);
         height: 0;
@@ -954,21 +957,21 @@ form {
 
 
     #navbar.active-menu #nav__menu {
-        height: calc(100vh - 80px);
+        height: calc(100vh - 8rem);
         visibility: visible;
         overflow-y: auto;
     }
 
     #nav__menu a {
-        padding: 20px 0;
-        margin: 0 10px;
-        border-bottom: 1px solid var(--gray-bg1);
+        padding: 2rem 0;
+        margin: 0 1rem;
+        border-bottom: 0.1rem solid var(--gray-bg1);
     }
 
     #btn-mobile {
         display: flex;
-        padding: 10px;
-        font-size: 10px;
+        padding: 1rem;
+        font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
@@ -976,18 +979,18 @@ form {
 
     #hamburguer {
         color:var(--light-txt);
-        border-top: 2px solid;
-        width: 20px;
+        border-top: 0.2rem solid;
+        width: 2rem;
     }
 
     #hamburguer::before,
     #hamburguer::after {
         content: '';
         display: block;
-        width: 20px;
-        height: 2px;
+        width: 2rem;
+        height: 0.2rem;
         background: currentColor;
-        margin-top: 5px;
+        margin-top: 0.5rem;
         transition: .4s;
         position: relative;
     }
@@ -1003,12 +1006,12 @@ form {
 
     #navbar.active-menu #hamburguer::after {
         transform: rotate(-135deg);
-        top: -7px;
+        top: -0.7rem;
     }
 
     /*products*/
     .p2u {
-        max-width: 340px;
+        max-width: 34rem;
         width: 100%;
     }
 
@@ -1025,7 +1028,7 @@ form {
 
     /*-graphics-*/
     .comm_graphics .comm__info {
-        gap: 20px;
+        gap: 2rem;
     }
 
     /*footer*/
