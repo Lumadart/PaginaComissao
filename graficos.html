@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
    <meta charset="UTF-8">
@@ -18,22 +18,24 @@
 
    <!-- ========== HEADER ========== -->
    <header id="header">
-      <div class="container">
+      <div class="container wrap space-b a-center g-20">
 
-         <nav class="nav__header wrap space-b a-center g-20">
-            <!--logo-->
-               <a href="./index.html">
-                  <img class="logo" src="./assets/img/logo.png" alt="Imagem logotipo">
-               </a>
+         <!--logo-->
+         <a href="./index.html">
+            <img class="logo" src="./assets/img/logo.png" alt="Imagem logotipo">
+         </a>
 
-            <!--nav menu-->
-            <ul class="nav__links">
-               <li><a href="./index.html">Início</a></li>
-               <li><a href="./termos.html">Termos</a></li>
+         <!--nav menu-->
+         <nav id="navbar">
+
+            <button id="btn-mobile"><span id="hamburguer"></span></button>
+
+            <ul id="nav__menu">
+               <li><a class="active" href="./index.html">Início</a></li>
+               <li><a href="./termos.html">TOS</a></li>
                <li><a href="./contato.html">Contato</a></li>
                <li><a href="./sobre.html">Sobre</a></li>
             </ul>
-
          </nav>
 
       </div>
@@ -265,6 +267,9 @@
          </div>
       </div>
    </footer>
+
+   <script src="menu__mobile.js"></script>
+   
 </body>
 
 </html>
