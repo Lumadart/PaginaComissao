@@ -518,10 +518,12 @@ hr {
     width: 400px;
     opacity: .1;
     transition: .4s;
+    
 }
 
 .products .card__item:hover .card__item--img {
-    transform: scale(1.4);
+    transform: scale(1.2);
+
 }
 
 /* ==================== ABOUT ==================== */
