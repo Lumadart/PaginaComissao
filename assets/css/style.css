@@ -430,12 +430,14 @@ main {
     padding: 0 2rem;
     background-color: var(--dark-bg2);
     width: 100%;
+    min-height: 92vh;
 }
 
 .header__hero {
     margin: 0 auto !important;
     max-width: 1300px !important;
     width: 100%;
+
 }
 
 .header__hero--left {
@@ -931,21 +933,6 @@ form {
         gap: 4rem;
     }
 
-    /*hero*/
-    .header__hero--left {
-        order: 2;
-    }
-
-    .header__hero-img {
-        max-width: 52rem;
-        margin-top: 0;
-        order: 1;
-    }
-
-    .active::before {
-        display: none;
-    }
-
     /*menu mobile*/
     #btn-mobile {
         display: block;
@@ -1016,6 +1003,21 @@ form {
     #navbar.active-menu #hamburguer::after {
         transform: rotate(-135deg);
         top: -0.7rem;
+    }
+
+    /*hero*/
+    .header__hero--left {
+        order: 2;
+    }
+
+    .header__hero-img {
+        max-width: 52rem;
+        margin-top: 0;
+        order: 1;
+    }
+
+    .active::before {
+        display: none;
     }
 
     /*products*/
