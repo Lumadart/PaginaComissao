@@ -319,8 +319,12 @@ hr {
 }
 
 /*---------- min height for inner pages ----------*/
+
+main {
+    margin-top: 8rem;
+}
+
 .inner_pages {
-    padding-top: 15rem;
     min-height: calc(100vh - 12rem);
 }
 
@@ -432,7 +436,7 @@ hr {
     margin: 0 auto !important;
     max-width: 1300px !important;
     width: 100%;
-    min-height: 100vh;
+    header__hero--left
 }
 
 .header__hero--left {
@@ -521,7 +525,7 @@ hr {
     width: 40rem;
     opacity: 0.06;
     transition: .4s;
-    
+
 }
 
 .products .card__item:hover .card__item--img {
@@ -910,25 +914,33 @@ form {
 
 @media screen and (max-width: 1380px) {
 
+
+    main {
+        margin-top: 8rem;
+    }
+
     .inner_pages {
         min-height: calc(100vh - 12rem);
     }
 
     .container,
     .header__hero {
-        max-width: 52rem !important;
+        max-width: 520px !important;
         margin: 0 auto;
+        min-height: 0;
+        padding: 4rem;
+        gap: 4rem;
     }
 
     /*hero*/
-    .header__hero {
-        margin-top: 16rem;
-        gap: 4rem
+    .header__hero--left {
+        order: 2;
     }
 
     .header__hero-img {
         max-width: 52rem;
         margin-top: 0;
+        order: 1;
     }
 
     .active::before {
@@ -955,7 +967,6 @@ form {
         overflow-y: hidden;
     }
 
-
     #navbar.active-menu #nav__menu {
         height: calc(100vh - 8rem);
         visibility: visible;
@@ -978,7 +989,7 @@ form {
     }
 
     #hamburguer {
-        color:var(--light-txt);
+        color: var(--light-txt);
         border-top: 0.2rem solid;
         width: 2rem;
     }
@@ -1001,7 +1012,6 @@ form {
 
     #navbar.active-menu #hamburguer::before {
         transform: rotate(135deg);
-
     }
 
     #navbar.active-menu #hamburguer::after {
@@ -1032,6 +1042,11 @@ form {
     }
 
     /*footer*/
+
+    footer {
+        gap: 1rem;
+    }
+
     #footer .container {
         justify-content: center;
     }
