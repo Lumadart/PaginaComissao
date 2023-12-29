@@ -30,15 +30,15 @@ textarea {
     --light-bg1: #e9e9e9;
 
     /*colors*/
-    --purple: #8C429C;
-    --yellow: #E8B163;
+    --teal: #40B5AD;
+    --orange: #f5b454;
 
     /*cor status*/
     --green: #6cca67;
     --red: #f04c4c;
 
     /*gradients*/
-    --gradient01: linear-gradient(45deg, var(--purple), var(--yellow));
+    --gradient01: linear-gradient(45deg, var(--teal), var(--orange));
 
     /*box shadow*/
     --box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px, rgba(0, 0, 0, 0.1) 0px 3px 3px;
@@ -87,13 +87,13 @@ html {
 
 /* ==================== LINKS ==================== */
 a {
-    color: var(--yellow);
+    color: var(--orange);
     text-decoration: none;
     transition: .4s;
 }
 
 a:hover {
-    color: var(--purple);
+    color: var(--teal);
 }
 
 /* ==================== LISTS ==================== */
@@ -106,7 +106,7 @@ li {
 li::marker {
     /*-icon color-*/
     font-weight: var(--fw-800);
-    color: var(--yellow);
+    color: var(--orange);
     letter-spacing: 1rem;
     font-size: 1rem;
     font-family: 'FontAwesome';
@@ -150,7 +150,7 @@ h3 {
 
 /* ==================== TITLES ==================== */
 
-/*-yellow line below-*/
+/*-orange line below-*/
 .item-title {
     font-size: 2.5rem;
     font-weight: var(--fw-800);
@@ -166,7 +166,7 @@ h3 {
     left: 0;
     bottom: -1.5rem;
     margin: 0;
-    background: var(--yellow);
+    background: var(--orange);
     border-radius: 1rem;
     position: absolute;
 }
@@ -188,7 +188,7 @@ h3 {
     width: 6rem;
     bottom: -1.5rem;
     margin: 0;
-    background: var(--yellow);
+    background: var(--orange);
     border-radius: 1rem;
     position: absolute;
     left: 50%;
@@ -213,7 +213,7 @@ h3 {
     content: "\2726";
     position: absolute;
     left: 0;
-    color: var(--yellow);
+    color: var(--orange);
 }
 
 /*-line-*/
@@ -255,7 +255,7 @@ hr {
     border-radius: 0.5rem;
     transition: .4s;
     cursor: pointer;
-    background: var(--purple);
+    background: var(--teal);
     color: var(--light-txt);
     box-shadow: var(--box-shadow);
 }
@@ -279,7 +279,7 @@ hr {
     line-height: 5rem;
     padding: 0 5rem;
     background: transparent;
-    background: var(--purple);
+    background: var(--teal);
     color: var(--light-txt);
     transition: .2s;
 }
@@ -405,7 +405,7 @@ main {
 }
 
 #nav__menu a:hover {
-    color: var(--yellow);
+    color: var(--orange);
 }
 
 .active::before {
@@ -413,7 +413,7 @@ main {
     top: -1.5rem;
     font-size: 1.5rem;
     left: 50%;
-    color: var(--yellow);
+    color: var(--orange);
     transform: translate(-50%);
     position: absolute;
 }
@@ -471,17 +471,18 @@ main {
 .p2u h3 {
     text-transform: uppercase;
     font-weight: var(--fw-900);
-    color: var(--yellow);
+    color: var(--orange);
 }
 
 /* ==================== CARDS - PRODUCTS / ABOUT ==================== */
+
 /* ---------- card ---------- */
 .card__item-card,
 .products .card__item {
     border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
-    background: var(--dark-bg2);
+    background: var(--gray-bg1);
     box-shadow: var(--box-shadow);
 }
 
@@ -524,7 +525,7 @@ main {
 
 .products .card__item--img {
     width: 40rem;
-    opacity: 0.06;
+    opacity: 0.1;
     transition: .4s;
 
 }
@@ -587,7 +588,7 @@ main {
 }
 
 #juniabout .card__item-links a {
-    background-color: var(--yellow);
+    background-color: var(--orange);
 }
 
 /* ---------- luma style ---------- */
@@ -596,7 +597,7 @@ main {
 }
 
 #lumaabout .card__item-links a {
-    background-color: var(--purple);
+    background-color: var(--teal);
 }
 
 
@@ -743,17 +744,17 @@ NOTES
     position: absolute;
     right: 4rem;
     font-size: 2.5rem;
-    color: var(--yellow);
+    color: var(--orange);
     transition: .5s;
 }
 
 .term-item__question:hover label::after {
-    color: var(--purple);
+    color: var(--teal);
 }
 
 .term-item__question input:checked~label::after {
     transform: rotate(135deg);
-    color: var(--purple);
+    color: var(--teal);
 }
 
 /*-answer-*/
@@ -795,7 +796,7 @@ form {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: var(--fw-800);
-    color: var(--yellow);
+    color: var(--orange);
     line-height: 2rem;
     left: 2.5rem;
     top: 1.2rem;
@@ -810,7 +811,7 @@ form {
 .contact-form__input:not(:placeholder-shown)~.contact-form__label {
     top: -1rem;
     left: 1.5rem;
-    color: var(--yellow);
+    color: var(--orange);
     background-color: var(--dark-bg1);
     padding: 0 1rem;
     opacity: 1;
@@ -825,7 +826,7 @@ form {
     font-family: inherit;
     background-color: var(--dark-bg1);
     border-radius: var(--border-radius);
-    border: 0.1rem solid var(--yellow);
+    border: 0.1rem solid var(--orange);
     color: var(--light-txt);
 }
 
@@ -853,13 +854,17 @@ form {
     min-height: 4rem;
 }
 
+#footer span {
+    color: var(--teal);
+}
+
 /* ---------- links ---------- */
 #footer a {
     color: var(--light-txt);
 }
 
 #footer a:hover {
-    color: var(--yellow);
+    color: var(--orange);
 }
 
 /* ---------- logo ---------- */
