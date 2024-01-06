@@ -123,9 +123,9 @@ li::marker {
 
 /* ==================== HEADLINES ==================== */
 h1 {
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: var(--fw-600) !important;
-    line-height: 8rem;
+    line-height: 6rem;
 }
 
 h2 {
@@ -325,7 +325,7 @@ main {
 }
 
 .inner_pages {
-    min-height: calc(100vh - 12rem);
+    min-height: calc(100vh - 20rem);
 }
 
 /*---------- flex box----------*/
@@ -400,6 +400,9 @@ main {
     display: block;
     padding: 0.8rem;
     transition: .4s;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
     position: relative;
     color: var(--light-txt);
 }
@@ -418,61 +421,28 @@ main {
     position: absolute;
 }
 
-
 #btn-mobile {
     display: none;
 }
 
-
 /* ==================== HERO ====================*/
 
 #hero {
-    padding: 0 2rem;
-    background-color: var(--dark-bg2);
-    width: 100%;
-    min-height: 92vh;
+    padding-bottom: 4rem;
 }
-
-.header__hero {
-    margin: 0 auto !important;
-    max-width: 1300px !important;
-    width: 100%;
-
-}
-
 .header__hero--left {
-    max-width: 50rem;
+    max-width: 55rem;
     width: 100%;
 }
 
 .header__hero-img {
-    max-width: 75rem;
+    max-width: 55rem;
     width: 100%;
-    margin-top: 5rem;
+
 }
 
 /* ==================== PRODUCTS | index page ====================*/
 
-#products {
-    min-height: 60vh;
-    scroll-margin-top: 8rem;
-}
-
-/* ---------- P2U itens ---------- */
-.p2u {
-    width: 100%;
-    background: var(--gray-bg1);
-    border-radius: var(--border-radius);
-    margin-top: 6rem;
-    padding: 4rem;
-    box-shadow: var(--box-shadow);
-}
-
-.p2u h3 {
-    text-transform: uppercase;
-    font-weight: var(--fw-900);
-    color: var(--orange);
-}
 
 /* ==================== CARDS - PRODUCTS / ABOUT ==================== */
 
@@ -504,13 +474,15 @@ main {
 .card__item-info {
     padding: 4rem;
     text-align: center !important;
+    width: 100%;
 }
+
 
 /* ==================== PRODUCTS ==================== */
 
 .products .card__item {
     max-width: 34rem;
-    height: 34rem;
+    height: 20rem;
 }
 
 .products .card__item-info {
@@ -1025,14 +997,10 @@ form {
         display: none;
     }
 
-    /*products*/
-    .p2u {
-        max-width: 34rem;
-        width: 100%;
-    }
-
-    .p2u__txt {
-        justify-content: center;
+    /* products*/
+    .products {
+        flex-direction: column;
+        align-items: center;
     }
 
     /*-illustrations item prices-*/
