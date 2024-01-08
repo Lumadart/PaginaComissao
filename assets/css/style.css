@@ -150,7 +150,7 @@ h3 {
 
 /* ==================== TITLES ==================== */
 
-/*-orange line below-*/
+/* ---------- orange line below ---------- */
 .item-title {
     font-size: 2.5rem;
     font-weight: var(--fw-800);
@@ -171,7 +171,7 @@ h3 {
     position: absolute;
 }
 
-/*-middle- inner pages*/
+/* ---------- middle- inner pages ---------- */
 
 .section__title--center {
     font-size: 2.5rem;
@@ -227,6 +227,25 @@ h3 {
     position: absolute;
 }
 
+/* ---------- color + line right ---------- */
+.title--line {
+    font-size: 1.4rem;
+    position: relative;
+
+}
+
+/*-line-*/
+.title--line::after {
+    content: '';
+    height: 0.2rem;
+    width: 100%;
+    margin: 1rem;
+    background: var(--dark-bg1);
+    border-radius: 1rem;
+    position: absolute;
+}
+
+/* ---------- lines ---------- */
 .divider {
     text-align: center;
     color: var(--dark-bg2);
@@ -322,9 +341,6 @@ hr {
 
 main {
     margin-top: 8rem;
-}
-
-.inner_pages {
     min-height: calc(100vh - 20rem);
 }
 
@@ -430,35 +446,30 @@ main {
 #hero {
     padding-bottom: 4rem;
 }
+
 .header__hero--left {
     max-width: 55rem;
     width: 100%;
 }
 
 .header__hero-img {
-    max-width: 55rem;
+    max-width: 45rem;
     width: 100%;
 
 }
 
 /* ==================== PRODUCTS | index page ====================*/
 
-
-/* ==================== CARDS - PRODUCTS / ABOUT ==================== */
-
 /* ---------- card ---------- */
-.card__item-card,
-.products .card__item {
-    border-radius: var(--border-radius);
+ .card__item {
+    max-width: 34rem;
+    height: 20rem;
+    width: 100%;
     overflow: hidden;
     position: relative;
     background: var(--gray-bg1);
     box-shadow: var(--box-shadow);
-}
-
-.card__item {
-    max-width: 45rem;
-    width: 100%;
+    border-radius: var(--border-radius);
 }
 
 /* ---------- info ---------- */
@@ -467,111 +478,26 @@ main {
     font-weight: var(--fw-800);
 }
 
-.card__item-detail {
-    font-size: 1.2rem;
-}
 
 .card__item-info {
     padding: 4rem;
     text-align: center !important;
     width: 100%;
-}
-
-
-/* ==================== PRODUCTS ==================== */
-
-.products .card__item {
-    max-width: 34rem;
-    height: 20rem;
-}
-
-.products .card__item-info {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.products button {
-    margin-top: 3rem;
 }
 
 .products .card__item--img {
     width: 40rem;
     opacity: 0.1;
     transition: .4s;
-
 }
 
 .products .card__item:hover .card__item--img {
     transform: scale(1.1);
 
 }
-
-/* ==================== ABOUT ==================== */
-
-.about .card__item {
-    max-width: 45rem;
-    box-shadow: var(--box-shadow);
-}
-
-/* ---------- avatar ---------- */
-.card__item-avatar {
-    max-width: 20rem;
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin: 2rem auto 0;
-    border: 1rem solid var(--gray-bg1);
-}
-
-.about {
-    justify-content: space-evenly;
-}
-
-/* ---------- links ---------- */
-.card__item-links {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style-type: none;
-    margin: 2rem auto;
-}
-
-.card__item-links a {
-    padding: 0.2rem 0.7rem;
-    border-radius: var(--border-radius);
-    color: var(--dark-txt);
-    font-weight: var(--fw-800);
-    display: block;
-}
-
-.card__item-links .port {
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-.card__item-links a:hover {
-    opacity: .6;
-}
-
-/* ---------- juni style ---------- */
-#juniabout {
-    background: var(--gray-bg1) url(../img/juniprofilebg.png) center top no-repeat;
-}
-
-#juniabout .card__item-links a {
-    background-color: var(--orange);
-}
-
-/* ---------- luma style ---------- */
-#lumaabout {
-    background: var(--gray-bg1) url(../img/lumaprofilebg.png) center top no-repeat;
-}
-
-#lumaabout .card__item-links a {
-    background-color: var(--teal);
-}
-
 
 /*==================== COMMISSIONS ====================*/
 
@@ -809,6 +735,59 @@ form {
     overflow: auto;
 }
 
+/* ==================== ABOUT ==================== */
+.profile__member {
+    background: var(--gray-bg1);
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    width: 45rem;
+    display: flex;
+    box-shadow: var(--box-shadow);
+}
+
+.profile__member--img {
+    background: var(--dark-bg2);
+}
+
+.profile__member--info {
+    padding: 4rem 3rem;
+}
+
+.member--info {
+    overflow: hidden !important;
+}
+
+.profile__member--info h2 {
+    text-transform: uppercase;
+}
+
+.profile__member--info p {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.profile__member--social {
+    display: flex;
+    list-style: none;
+}
+
+.profile__member--social a {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    margin: .5rem;
+    text-align: center;
+    background: var(--dark-bg1);
+    border-radius: var(--border-radius);
+    transition: .4s;
+}
+
+/*-cores-*/
+#junicard .profile__member--info h3 {
+    color: var(--orange);
+}
 
 /* ==================== FOOTER ==================== */
 #footer {
