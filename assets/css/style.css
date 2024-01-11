@@ -130,36 +130,34 @@ h1 {
 
 h2 {
     font-size: 3rem;
+    font-weight: var(--fw-600);
 }
 
 h3 {
     font-size: 2rem;
+    font-weight: var(--fw-600);
 }
 
 h4 {
     font-size: 1.8rem;
-    font-weight: var(--fw-800);
+    font-weight: var(--fw-600);
 }
 
 /*- font weight -*/
-h1,
-h2,
-h3 {
-    font-weight: var(--fw-700);
-}
+
+
 
 /* ==================== TITLES ==================== */
 
 /* ---------- orange line below ---------- */
-.item-title {
+.title--left {
     font-size: 2.5rem;
-    font-weight: var(--fw-800);
     margin-bottom: 2rem;
     position: relative;
     text-transform: uppercase;
 }
 
-.item-title::after {
+.title--left::after {
     content: '';
     height: .3rem;
     width: 6rem;
@@ -173,16 +171,15 @@ h3 {
 
 /* ---------- middle- inner pages ---------- */
 
-.section__title--center {
+.title--center {
     font-size: 2.5rem;
-    font-weight: var(--fw-800);
     margin-bottom: 6rem;
     position: relative;
     text-transform: uppercase;
     text-align: center;
 }
 
-.section__title--center::after {
+.title--center::after {
     content: '';
     height: .3rem;
     width: 6rem;
@@ -200,8 +197,13 @@ h3 {
     margin-bottom: 6rem;
 }
 
+.detail {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
 /* ---------- star left + line right ---------- */
-.item-title--starline {
+.title--starline {
     text-transform: uppercase;
     position: relative;
     padding-left: 3rem;
@@ -209,7 +211,7 @@ h3 {
 }
 
 /*-star-*/
-.item-title--starline::before {
+.title--starline::before {
     content: "\2726";
     position: absolute;
     left: 0;
@@ -217,9 +219,9 @@ h3 {
 }
 
 /*-line-*/
-.item-title--starline::after {
+.title--starline::after {
     content: '';
-    height: 0.1rem;
+    height: 0.2rem;
     width: 100%;
     margin: 1.2rem 2rem 0;
     background: var(--gray-bg1);
@@ -231,7 +233,7 @@ h3 {
 .title--line {
     font-size: 1.4rem;
     position: relative;
-
+    margin-bottom: 1rem;
 }
 
 /*-line-*/
@@ -239,7 +241,7 @@ h3 {
     content: '';
     height: 0.2rem;
     width: 100%;
-    margin: 1rem;
+    margin: 1.2rem;
     background: var(--dark-bg1);
     border-radius: 1rem;
     position: absolute;
@@ -390,7 +392,9 @@ main {
     left: 0;
     height: 8rem;
     width: 100%;
-    background-color: var(--dark-bg2);
+    background: #22222271;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--box-shadow);
     z-index: 2;
 }
 
@@ -461,7 +465,7 @@ main {
 /* ==================== PRODUCTS | index page ====================*/
 
 /* ---------- card ---------- */
- .card__item {
+.card__item {
     max-width: 34rem;
     height: 20rem;
     width: 100%;
@@ -761,7 +765,8 @@ form {
     text-transform: uppercase;
 }
 
-.profile__member--info p {
+.profile__member--info p,
+.port {
     text-transform: uppercase;
     font-size: .8rem;
 }
@@ -772,22 +777,81 @@ form {
 }
 
 .profile__member--social a {
+    color: var(--light-txt);
     display: block;
-    font-size: 1.6rem;
-    line-height: 3rem;
-    height: 3rem;
-    min-width: 3rem;
-    margin: .5rem;
+    padding: 0 .8rem;
+    margin: .4rem;
     text-align: center;
     background: var(--dark-bg1);
     border-radius: var(--border-radius);
     transition: .4s;
 }
 
+.profile__member--social a:hover {
+    transform: scale(1.2);
+}
+
+.skill--bar {
+    height: .6rem;
+    width: 100%;
+    background-color: var(--dark-bg1);
+    border-radius: var(--border-radius);
+}
+
+.skill--bar:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.skill--per {
+    display: block;
+    height: .6rem;
+    width: 80%;
+    border-radius: var(--border-radius);
+}
+
+.jn1 {
+    width: 90%;
+}
+
+.jn2 {
+    width: 40%;
+}
+
+.jn3 {
+    width: 60%;
+}
+
+.lm1 {
+    width: 10%;
+}
+
+.lm2 {
+    width: 90%;
+}
+
+.lm3 {
+    width: 80%;
+}
+
 /*-cores-*/
-#junicard .profile__member--info h3 {
+#junicard .profile__member--info h3,
+#junicard .profile__member--social a:hover {
     color: var(--orange);
 }
+
+#junicard .skill--per {
+    background: var(--orange);
+}
+
+#lumacard .profile__member--info h3,
+#lumacard .profile__member--social a:hover {
+    color: var(--teal);
+}
+
+#lumacard .skill--per {
+    background: var(--teal);
+}
+
 
 /* ==================== FOOTER ==================== */
 #footer {
