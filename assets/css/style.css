@@ -834,7 +834,7 @@ form {
 }
 
 /*-cores-*/
-#junicard .profile__member--info h3,
+#junicard .profile__member--info h4,
 #junicard .profile__member--social a:hover {
     color: var(--orange);
 }
@@ -843,7 +843,7 @@ form {
     background: var(--orange);
 }
 
-#lumacard .profile__member--info h3,
+#lumacard .profile__member--info h4,
 #lumacard .profile__member--social a:hover {
     color: var(--teal);
 }
