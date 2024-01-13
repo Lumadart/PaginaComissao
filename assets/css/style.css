@@ -24,16 +24,16 @@ textarea {
     --dark-txt: #161616;
 
     /*background*/
+    --light-bg1: #e9e9e9;
     --gray-bg1: #222222;
     --dark-bg1: #161616;
     --dark-bg2: #0c0c0c;
-    --light-bg1: #e9e9e9;
 
     /*colors*/
     --teal: #40B5AD;
     --orange: #f5b454;
 
-    /*cor status*/
+    /*color status*/
     --green: #6cca67;
     --red: #f04c4c;
 
@@ -51,10 +51,6 @@ textarea {
 
     /*border-radius*/
     --border-radius: 5px;
-
-    /*box shadow*/
-    --bshadow-p: 0 4px 0px #52265c;
-    --bshadow-y: 0 2px 0px #b99461;
 }
 
 /* ==================== Body HTML ==================== */
@@ -339,7 +335,7 @@ hr {
     padding: 4rem 2rem;
 }
 
-/*---------- min height for inner pages ----------*/
+/*---------- min height pages ----------*/
 
 main {
     margin-top: 8rem;
@@ -420,8 +416,9 @@ main {
     display: block;
     padding: 0.8rem;
     transition: .4s;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: .2rem;
+    font-weight: 600;
     text-transform: uppercase;
     position: relative;
     color: var(--light-txt);
@@ -554,10 +551,6 @@ main {
     background-color: var(--red);
 }
 
-.comm-illust .comm__info {
-    justify-content: space-between;
-}
-
 /*- price and info-*/
 .comm__info--detail {
     font-size: 1.2rem;
@@ -569,6 +562,7 @@ main {
 
 .comm__info--price span {
     font-weight: var(--fw-800);
+    color: var(--teal);
 }
 
 .comm__info--price li {
@@ -581,7 +575,7 @@ main {
     width: 100% !important;
     height: auto;
     display: block;
-    background: var(--dark-bg2);
+    background: var(--light-bg1);
 }
 
 .comm__image-graphic {
@@ -622,7 +616,7 @@ NOTES
     color: var(--light-txt);
     background: var(--gray-bg1);
     position: relative;
-    padding: 1rem 4rem 2rem;
+    padding: 1rem 4rem 1.5rem;
     border-radius: var(--border-radius);
     overflow: hidden;
 }
@@ -707,18 +701,6 @@ form {
     cursor: text;
 }
 
-/* ---------- label animation ---------- */
-.contact-form__input:focus~.contact-form__label,
-.contact-form__input:valid~.contact-form__label,
-.contact-form__input:not(:placeholder-shown)~.contact-form__label {
-    top: -1rem;
-    left: 1.5rem;
-    color: var(--orange);
-    background-color: var(--dark-bg1);
-    padding: 0 1rem;
-    opacity: 1;
-}
-
 /* ---------- input ---------- */
 .contact-form__input {
     width: 100% !important;
@@ -730,6 +712,7 @@ form {
     border-radius: var(--border-radius);
     border: 0.1rem solid var(--orange);
     color: var(--light-txt);
+    transition: .4s;
 }
 
 /* ---------- textarea ---------- */
@@ -739,22 +722,43 @@ form {
     overflow: auto;
 }
 
+/* ---------- label animation ---------- */
+.contact-form__input:focus~.contact-form__label,
+.contact-form__input:valid~.contact-form__label,
+.contact-form__input:not(:placeholder-shown)~.contact-form__label {
+    top: -1rem;
+    left: 1.5rem;
+    color: var(--teal);
+    background-color: var(--dark-bg1);
+    padding: 0 1rem;
+    opacity: 1;
+}
+
+.contact-form__input:hover,
+.contact-form__input:focus,
+.contact-form__input:valid,
+.contact-form__input:not(:placeholder-shown)
+ {
+    border: 0.1rem solid var(--teal);
+}
 /* ==================== ABOUT ==================== */
 .profile__member {
     background: var(--gray-bg1);
     overflow: hidden;
     border-radius: var(--border-radius);
-    width: 45rem;
-    display: flex;
+    max-width: 45rem;
+    width: 100%;;
     box-shadow: var(--box-shadow);
 }
 
 .profile__member--img {
-    background: var(--dark-bg2);
+    width: 20rem;
+    height: 50rem;
 }
 
 .profile__member--info {
     padding: 4rem 3rem;
+    width: 25rem;
 }
 
 .member--info {
@@ -834,6 +838,10 @@ form {
 }
 
 /*-cores-*/
+
+#junicard .profile__member--img {
+    background:var(--dark-bg2) url(../img/junichibi.png) center top no-repeat;
+}
 #junicard .profile__member--info h4,
 #junicard .profile__member--social a:hover {
     color: var(--orange);
@@ -841,6 +849,10 @@ form {
 
 #junicard .skill--per {
     background: var(--orange);
+}
+
+#lumacard .profile__member--img {
+    background:var(--dark-bg2) url(../img/lumachibi.png) center top no-repeat;
 }
 
 #lumacard .profile__member--info h4,
@@ -964,10 +976,9 @@ form {
         width: 100%;
         top: 8rem;
         left: 0;
-        background: var(--dark-bg1);
         height: 0;
-        z-index: 5;
-
+        z-index: 2;
+        background: #222222;
         transition: .4s;
         visibility: hidden;
         overflow-y: hidden;
@@ -980,9 +991,9 @@ form {
     }
 
     #nav__menu a {
-        padding: 2rem 0;
+        padding: 2rem;
         margin: 0 1rem;
-        border-bottom: 0.1rem solid var(--gray-bg1);
+        border-bottom: 0.1rem solid var(--dark-bg1);
     }
 
     #btn-mobile {
@@ -1056,6 +1067,15 @@ form {
     /*-graphics-*/
     .comm_graphics .comm__info {
         gap: 2rem;
+    }
+
+    /*- about-*/
+    .profile__member--img {
+        width: 100%;
+        height: 20rem;
+    }
+    .profile__member--info {
+        width: 100%;
     }
 
     /*footer*/
