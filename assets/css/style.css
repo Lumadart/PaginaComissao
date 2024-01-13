@@ -914,34 +914,28 @@ form {
 
 /* ==================== THANKS PAGE ==================== */
 
-.thanks_page {
-    height: 100vh;
-    position: relative;
-}
-
 #thanks__page .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 0;
     background: var(--gray-bg1);
     border-radius: var(--border-radius);
-    text-align: center;
     box-shadow: var(--box-shadow);
-
+    overflow: hidden;
 }
 
-#thanks__page .container i {
-    font-size: 4rem;
-    padding: 3rem;
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    color: var(--light-bg1);
-    background-image: var(--gradient01);
+#thanks__page .img--area {
+    background-color: var(--dark-bg2);
+    width: 100%;
 }
 
+.img--area img {
+    display: block;
+    margin: 0 auto;
+}
 
+.txt--area {
+    text-align: center;
+    padding: 4rem;
+}
 
 /* ==================== MOBILE  ==================== */
 
