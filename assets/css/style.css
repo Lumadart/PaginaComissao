@@ -190,7 +190,7 @@ h4 {
 
 .subtitle {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 
 .detail {
@@ -737,17 +737,18 @@ form {
 .contact-form__input:hover,
 .contact-form__input:focus,
 .contact-form__input:valid,
-.contact-form__input:not(:placeholder-shown)
- {
+.contact-form__input:not(:placeholder-shown) {
     border: 0.1rem solid var(--teal);
 }
+
 /* ==================== ABOUT ==================== */
 .profile__member {
     background: var(--gray-bg1);
     overflow: hidden;
     border-radius: var(--border-radius);
     max-width: 45rem;
-    width: 100%;;
+    width: 100%;
+    ;
     box-shadow: var(--box-shadow);
 }
 
@@ -840,8 +841,9 @@ form {
 /*-cores-*/
 
 #junicard .profile__member--img {
-    background:var(--dark-bg2) url(../img/junichibi.png) center top no-repeat;
+    background: var(--dark-bg2) url(../img/junichibi.png) center top no-repeat;
 }
+
 #junicard .profile__member--info h4,
 #junicard .profile__member--social a:hover {
     color: var(--orange);
@@ -852,7 +854,7 @@ form {
 }
 
 #lumacard .profile__member--img {
-    background:var(--dark-bg2) url(../img/lumachibi.png) center top no-repeat;
+    background: var(--dark-bg2) url(../img/lumachibi.png) center top no-repeat;
 }
 
 #lumacard .profile__member--info h4,
@@ -1068,6 +1070,7 @@ form {
         width: 100%;
         height: 20rem;
     }
+
     .profile__member--info {
         width: 100%;
     }
