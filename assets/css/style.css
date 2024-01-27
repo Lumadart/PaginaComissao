@@ -61,7 +61,7 @@ body {
     font-size: 1.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
-    background: var(--dark-bg1);
+    background: var(--dark-bg1)  url(../img/halftone.png) center top no-repeat;
     animation: body-load 500ms ease-in;
 }
 
@@ -138,10 +138,6 @@ h4 {
     font-size: 1.8rem;
     font-weight: var(--fw-600);
 }
-
-/*- font weight -*/
-
-
 
 /* ==================== TITLES ==================== */
 
@@ -252,7 +248,7 @@ h4 {
 }
 
 hr {
-    border: 0.1rem solid var(--gray-bg1);
+    border: 0.1rem solid var(--dark-bg2);
 }
 
 /* ==================== PARAGRAPH ==================== */
@@ -425,9 +421,12 @@ main {
 }
 
 #nav__menu a:hover {
-    color: var(--orange);
+    color: var(--teal);
 }
 
+#nav__menu a.active {
+    color: var(--orange);
+}
 .active::before {
     content: "\2726";
     top: -1.5rem;
@@ -446,16 +445,32 @@ main {
 
 #hero {
     padding-bottom: 4rem;
+    min-height: calc(100vh - 15rem);
+}
+
+.header__hero {
+    position: relative;
+    height: 100%;
 }
 
 .header__hero--left {
     max-width: 55rem;
     width: 100%;
+    margin-top: 20rem;
+    z-index: 1;
+}
+
+.header__hero--left h1 {
+    color: var(--orange);
 }
 
 .header__hero-img {
-    max-width: 45rem;
+    max-width:55rem;
     width: 100%;
+    position: absolute;
+    right:0;
+    top:1rem;
+
 
 }
 
@@ -563,6 +578,7 @@ main {
 .comm__info--price span {
     font-weight: var(--fw-800);
     color: var(--teal);
+    text-transform: uppercase;
 }
 
 .comm__info--price li {
@@ -571,7 +587,7 @@ main {
 
 /*images*/
 .comm__image-illust {
-    max-width: 80rem;
+    max-width: 75rem;
     width: 100% !important;
     height: auto;
     display: block;
@@ -619,6 +635,7 @@ NOTES
     padding: 1rem 4rem 1.5rem;
     border-radius: var(--border-radius);
     overflow: hidden;
+    box-shadow: var(--box-shadow);
 }
 
 .term-item__question input {
@@ -869,7 +886,7 @@ form {
 
 /* ==================== FOOTER ==================== */
 #footer {
-    background: var(--dark-bg2);
+    background: var(--gray-bg1);
     font-weight: var(--fw-800);
     position: relative;
     margin-top: 4rem;
@@ -1035,6 +1052,7 @@ form {
     /*hero*/
     .header__hero--left {
         order: 2;
+        margin-top: 55rem;
     }
 
     .header__hero-img {
