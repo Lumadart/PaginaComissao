@@ -565,6 +565,12 @@ main {
     text-align: center;
 }
 
+.comm__price img {
+    background: url(../img/sample_illustration.png) top center no-repeat;
+    height:50rem;
+    width:36rem;
+}
+
 .comm__price--style h4{
     padding: 2rem;
 }
@@ -1048,6 +1054,11 @@ form {
     }
 
     /*hero*/
+
+    .header__hero {
+        padding: 4rem;    
+        height: 80vh;
+    }
     .header__hero--left {
         order: 2;
     }
