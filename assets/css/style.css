@@ -898,7 +898,6 @@ form {
 
 #footer .container {
     padding:2rem;
-    background: var(--gray-bg1);
     font-weight: var(--fw-800);
     text-transform: uppercase;
     font-size: 1rem;
@@ -908,7 +907,7 @@ form {
 }
 
 #footer span {
-    color: var(--teal);
+    color: var(--light-txt);
 }
 
 /* ---------- links ---------- */
@@ -929,7 +928,7 @@ form {
 #footer::after {
     content: "";
     width: 60%;
-    height: 0.4rem;
+    height: 0.2rem;
     left: 50%;
     bottom: 0;
     position: absolute;
@@ -1072,7 +1071,7 @@ form {
         width: 100%;
         right:0;
         order: 1;
-        margin-left:-1.5rem;
+        -margin-left:-1.5rem;
     }
 
     .active::before {
