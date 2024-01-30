@@ -445,12 +445,10 @@ main {
 /* ==================== HERO ====================*/
 
 #hero {
-    padding-bottom: 4rem;
     min-height: calc(100vh - 15rem);
 }
 
-.header__hero {
-    padding: 0 4rem;    
+.header__hero {   
     min-height: 50vh;
     background: var(--gray-bg1);
     border-radius: var(--border-radius);
@@ -458,7 +456,8 @@ main {
 }
 
 .header__hero--left {
-    max-width: 55rem;
+    padding: 4rem;
+    max-width: 65rem;
     width: 100%;
     z-index: 1;
 }
@@ -1065,9 +1064,10 @@ form {
     }
 
     .header__hero-img {
-        max-width: 52rem;
+        width: 52rem;
         right:0;
         order: 1;
+        margin-left:-1.5rem;
     }
 
     .active::before {
