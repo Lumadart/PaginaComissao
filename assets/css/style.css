@@ -566,7 +566,7 @@ main {
 }
 
 .comm__price img {
-    background: url(../img/sample_illustration.png) top center no-repeat;
+    background: url(../img/sample_background.png) top center no-repeat;
     height:50rem;
     width:36rem;
 }
@@ -1057,15 +1057,17 @@ form {
 
     .header__hero {
         padding: 4rem;    
-        height: 80vh;
+        min-height: 80vh;
+
     }
     .header__hero--left {
         order: 2;
+        margin-top: 40rem;
     }
 
     .header__hero-img {
         max-width: 52rem;
-        margin-top: 0;
+        right:0;
         order: 1;
     }
 
@@ -1079,6 +1081,11 @@ form {
         align-items: center;
     }
 
+    .card__item {
+        max-width: 45rem;
+        width: 100%;
+    }
+
     /*-illustrations item prices-*/
 
     /*ilusts*/
@@ -1086,6 +1093,7 @@ form {
     .comm__price--style img {
         max-width: 45rem;
         width: 100%;
+        height: auto;
     }
 
     /*-graphics-*/
