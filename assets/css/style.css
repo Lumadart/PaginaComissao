@@ -1060,7 +1060,7 @@ form {
     }
 
     .header__hero-img {
-        max-width: 52rem;
+        max-width: 42rem;
         width: 100%;
         right:0;
         order: 1;
