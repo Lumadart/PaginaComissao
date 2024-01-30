@@ -1059,12 +1059,9 @@ form {
         order: 2;
     }
 
-    .header__hero--left h1 {
-        font-size: 2.5rem;
-    }
-
     .header__hero-img {
-        width: 52rem;
+        max-width: 52rem;
+        width: 100%;
         right:0;
         order: 1;
         margin-left:-1.5rem;
