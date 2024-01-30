@@ -248,7 +248,7 @@ h4 {
 }
 
 hr {
-    border: 0.1rem solid var(--dark-bg2);
+    border: 0.1rem solid var(--gray-bg1);
 }
 
 /* ==================== PARAGRAPH ==================== */
@@ -384,14 +384,14 @@ main {
     left: 0;
     height: 8rem;
     width: 100%;
-    background: #22222271;
-    backdrop-filter: blur(10px);
-    box-shadow: var(--box-shadow);
     z-index: 2;
 }
 
 #header .container {
     padding: 2rem;
+    background: #22222271;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--box-shadow);
 }
 
 /*- logo -*/
@@ -449,14 +449,16 @@ main {
 }
 
 .header__hero {
+    padding: 4rem;    
+    height: 50vh;
     position: relative;
-    height: 100%;
+    background: var(--gray-bg1);
+    border-radius: var(--border-radius);
 }
 
 .header__hero--left {
     max-width: 55rem;
     width: 100%;
-    margin-top: 20rem;
     z-index: 1;
 }
 
@@ -465,18 +467,17 @@ main {
 }
 
 .header__hero-img {
-    max-width:55rem;
+    max-width:45rem;
     width: 100%;
     position: absolute;
-    right:0;
-    top:1rem;
-
+    right:-1.5rem;
+    top:-2rem;
+    margin-bottom: -5rem;
 
 }
 
 /* ==================== PRODUCTS | index page ====================*/
 
-/* ---------- card ---------- */
 .card__item {
     max-width: 34rem;
     height: 20rem;
@@ -487,13 +488,6 @@ main {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
-
-/* ---------- info ---------- */
-.card__item-name {
-    text-transform: uppercase;
-    font-weight: var(--fw-800);
-}
-
 
 .card__item-info {
     padding: 4rem;
@@ -1052,7 +1046,6 @@ form {
     /*hero*/
     .header__hero--left {
         order: 2;
-        margin-top: 55rem;
     }
 
     .header__hero-img {
