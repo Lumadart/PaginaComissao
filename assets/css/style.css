@@ -455,6 +455,7 @@ main {
     position: relative;
     background: var(--gray-bg1);
     border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 
 .header__hero--left {
