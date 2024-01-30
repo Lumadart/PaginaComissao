@@ -450,9 +450,8 @@ main {
 }
 
 .header__hero {
-    padding: 4rem;    
-    height: 50vh;
-    position: relative;
+    padding: 0 4rem;    
+    min-height: 50vh;
     background: var(--gray-bg1);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -471,9 +470,8 @@ main {
 .header__hero-img {
     max-width:45rem;
     width: 100%;
-    position: absolute;
-    right:-1.5rem;
-    top:-2rem;
+    margin-right:-3rem;
+    margin-top:-3rem;
     margin-bottom: -5rem;
 
 }
@@ -1056,14 +1054,8 @@ form {
 
     /*hero*/
 
-    .header__hero {
-        padding: 4rem;    
-        min-height: 80vh;
-
-    }
     .header__hero--left {
         order: 2;
-        margin-top: 40rem;
     }
 
     .header__hero-img {
