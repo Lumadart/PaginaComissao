@@ -453,6 +453,7 @@ main {
     background: var(--gray-bg1);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    position: relative;
 }
 
 .header__hero--left {
@@ -469,9 +470,9 @@ main {
 .header__hero-img {
     max-width:45rem;
     width: 100%;
-    margin-right:-3rem;
-    margin-top:-3rem;
-    margin-bottom: -5rem;
+    top:-1.5rem;
+    right:-1rem;
+    position: absolute;
 
 }
 
@@ -1057,6 +1058,7 @@ form {
 
     .header__hero--left {
         order: 2;
+        margin-top:40rem
     }
 
     .header__hero--left h1 {
@@ -1064,7 +1066,7 @@ form {
     }
 
     .header__hero-img {
-        max-width: 45rem;
+        max-width: 50rem;
         width: 100%;
         right:0;
         order: 1;
