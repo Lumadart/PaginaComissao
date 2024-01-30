@@ -565,6 +565,7 @@ main {
 
 .comm__price img {
     background: url(../img/sample_background.png) top center no-repeat;
+    background-size: cover;
     height:50rem;
     width:36rem;
     object-fit: cover;
@@ -890,18 +891,20 @@ form {
 
 /* ==================== FOOTER ==================== */
 #footer {
-    background: var(--gray-bg1);
-    font-weight: var(--fw-800);
     position: relative;
     margin-top: 4rem;
-    padding: 2rem;
+
 }
 
 #footer .container {
-    padding: 0 1rem;
+    padding:2rem;
+    background: var(--gray-bg1);
+    font-weight: var(--fw-800);
     text-transform: uppercase;
     font-size: 1rem;
     min-height: 4rem;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
 }
 
 #footer span {
@@ -922,16 +925,15 @@ form {
     height: 3rem;
     width: 3rem;
 }
-
-
 /* ---------- gradient ---------- */
 #footer::after {
     content: "";
-    width: 100%;
+    width: 60%;
     height: 0.4rem;
-    left: 0;
+    left: 50%;
     bottom: 0;
     position: absolute;
+    transform: translate(-50%);
     background-image: var(--gradient01);
 }
 
@@ -1056,6 +1058,10 @@ form {
 
     .header__hero--left {
         order: 2;
+    }
+
+    .header__hero--left h1 {
+        font-size: 2.5rem;
     }
 
     .header__hero-img {
