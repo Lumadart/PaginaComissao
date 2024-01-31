@@ -30,7 +30,7 @@ textarea {
     --dark-bg2: #0c0c0c;
 
     /*colors*/
-    --teal: #40B5AD;
+    --teal: #17b19c;
     --orange: #f5b454;
 
     /*color status*/
@@ -258,12 +258,12 @@ hr {
 
 /* ==================== BUTTON ==================== */
 .btn {
+    max-width: 35rem;
     display: block;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     text-align: center;
-    line-height: 1rem;
     font-weight: var(--fw-800);
     border-radius: 0.5rem;
     transition: .4s;
@@ -278,9 +278,10 @@ hr {
 /*- 01 fixed width -*/
 .btn1 {
     height: 6rem;
-    line-height: 6rem;
+    line-height: 2rem;
+    padding: 0 2rem;
     width: 100%;
-    max-width: 30rem;
+    min-width: 20rem;
     margin: 0 auto;
     text-align: center;
     transition: .2s;
@@ -325,10 +326,10 @@ hr {
 
 /* ==================== CONTAINER ==================== */
 .container {
-    margin: 0 auto !important;
     max-width: 1160px !important;
     width: 100%;
-    padding: 4rem 0;
+    margin: 0 auto !important;
+    padding:0;
 }
 
 /*---------- min height pages ----------*/
@@ -336,6 +337,7 @@ hr {
 main {
     margin-top: 8rem;
     min-height: calc(100vh - 20rem);
+    padding: 2rem;
 }
 
 /*---------- flex box----------*/
@@ -385,14 +387,16 @@ main {
     height: 8rem;
     width: 100%;
     z-index: 2;
-}
 
-#header .container {
-    padding: 2rem;
     background: #2c2d30a1;
     backdrop-filter: blur(10px);
     border-radius: 0 0 5px 5px;
     box-shadow: var(--box-shadow);
+}
+
+#header .container {
+    padding:2rem;
+    margin:0 2rem;
 }
 
 /*- logo -*/
@@ -449,7 +453,7 @@ main {
 }
 
 .header__hero {   
-    min-height: 50vh;
+    min-height: 49rem;
     background: var(--gray-bg1);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -458,8 +462,7 @@ main {
 
 .header__hero--left {
     padding: 4rem;
-    max-width: 65rem;
-    width: 100%;
+    width: 50%;
     z-index: 1;
 }
 
@@ -468,7 +471,7 @@ main {
 }
 
 .header__hero-img {
-    max-width:45rem;
+    max-width:43rem;
     width: 100%;
     top:-1.5rem;
     right:-1rem;
@@ -479,36 +482,40 @@ main {
 /* ==================== PRODUCTS | index page ====================*/
 
 .card__item {
-    max-width: 36rem;
-    height: 20rem;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    background: var(--gray-bg1);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    padding: 2rem;
+    min-height: 2rem;
+    text-align: center;
 }
 
-.card__item-info {
-    padding: 4rem;
-    text-align: center !important;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.card__item h3 {
+    margin-bottom: 2rem;
 }
 
-.products .card__item--img {
-    width: 40rem;
-    opacity: 0.1;
-    transition: .4s;
+.p--01{
+    background:var(--gray-bg1) url(../img/img1_illustration.png);
 }
 
-.products .card__item:hover .card__item--img {
-    transform: scale(1.1);
-
+.p--02{
+    background:var(--gray-bg1) url(../img/img2_graphics.png);
 }
 
+.p--03{
+    background:var(--gray-bg1) url(../img/img3_pngtuber.png);
+}
+
+.p--01,
+.p--02,
+.p--03 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card__item img {
+    opacity: 0.5;
+}
 /*==================== COMMISSIONS ====================*/
 
 #comm-itens .container {
@@ -963,23 +970,10 @@ form {
 
 /* ==================== MOBILE  ==================== */
 
-@media screen and (max-width: 1380px) {
-
-
-    main {
-        margin-top: 8rem;
-    }
+@media (max-width: 768px) {
 
     .inner_pages {
         min-height: calc(100vh - 12rem);
-    }
-
-    .container {
-        max-width: 50rem !important;
-        margin: 0 auto;
-        min-height: 0;
-        padding: 4rem;
-        gap: 4rem;
     }
 
     /*menu mobile*/
@@ -1053,51 +1047,41 @@ form {
         top: -0.7rem;
     }
 
+    /*container*/
+    .container {
+        max-width: 55rem !important;
+        width: 100%;
+    }
+
     /*hero*/
+    #hero,
+    .products {
+        gap: 2rem;
+    }
+
+    .header__hero {
+        flex-direction: column;
+        gap: 0;
+    }
 
     .header__hero--left {
         order: 2;
-        margin-top:30rem;
-
-    }
-
-    .header__hero--left h1 {
-        font-size: 2.8rem;
-        line-height: 3rem;
+        width: 100%;
+        padding-top: 0;
     }
 
     .header__hero-img {
-        max-width: 50rem;
-        width: 100%;
-        right:0;
         order: 1;
-        -margin-left:-1.5rem;
-    }
-
-    .active::before {
-        display: none;
-    }
-
-    /* products*/
-    .products {
-        flex-direction: column;
-        align-items: center;
+        position: initial;
+        margin-top: -1.5rem;
     }
 
     .card__item {
-        max-width: 45rem;
         width: 100%;
     }
+
 
     /*-illustrations item prices-*/
-
-    /*ilusts*/
-    .comm__price--style,
-    .comm__price--style img {
-        max-width: 45rem;
-        width: 100%;
-        height: auto;
-    }
 
     /*-graphics-*/
     .comm_graphics .comm__info {
