@@ -39,6 +39,7 @@ textarea {
 
     /*gradients*/
     --gradient01: linear-gradient(45deg, var(--teal), var(--orange));
+    --gradient-gray: linear-gradient(0deg, #0c0c0cb6, 80%, #2c2d306c);
 
     /*box shadow*/
     --box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px, rgba(0, 0, 0, 0.1) 0px 3px 3px;
@@ -165,7 +166,7 @@ h4 {
 
 .title--center {
     font-size: 2.5rem;
-    margin-bottom: 6rem;
+    margin: 6rem 0;
     position: relative;
     text-transform: uppercase;
     text-align: center;
@@ -269,7 +270,7 @@ hr {
     transition: .4s;
     cursor: pointer;
     background: var(--teal);
-    color: var(--light-txt);
+    color: var(--dark-txt);
     box-shadow: var(--box-shadow);
 }
 
@@ -329,15 +330,15 @@ hr {
     max-width: 1160px !important;
     width: 100%;
     margin: 0 auto !important;
-    padding:0;
+    padding: 2rem;
 }
 
 /*---------- min height pages ----------*/
 
 main {
-    margin-top: 8rem;
+    margin-top:8rem ;
     min-height: calc(100vh - 20rem);
-    padding: 2rem;
+    padding: 0;
 }
 
 /*---------- flex box----------*/
@@ -395,14 +396,14 @@ main {
 }
 
 #header .container {
-    padding:2rem;
-    margin:0 2rem;
+    padding: 2rem;
+    margin: 0 2rem;
 }
 
 /*- logo -*/
 .logo {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: auto;
 }
 
 /*- menu -nav -*/
@@ -432,6 +433,7 @@ main {
 #nav__menu a.active {
     color: var(--orange);
 }
+
 .active::before {
     content: "\2726";
     top: -1.5rem;
@@ -449,21 +451,19 @@ main {
 /* ==================== HERO ====================*/
 
 #hero {
-    min-height: calc(100vh - 15rem);
+    width: 100%;
+    background: var(--gray-bg1) url(../img/halftonepatternbase_50p.png) bottom left repeat-x;
+    overflow: hidden;
+    margin-bottom: 2rem;
 }
 
-.header__hero {   
-    min-height: 49rem;
-    background: var(--gray-bg1);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+.header__hero {
     position: relative;
 }
 
 .header__hero--left {
-    padding: 4rem;
+    padding: 4rem 0;
     width: 50%;
-    z-index: 1;
 }
 
 .header__hero--left h1 {
@@ -471,51 +471,56 @@ main {
 }
 
 .header__hero-img {
-    max-width:43rem;
+    max-width: 43rem;
     width: 100%;
-    top:-1.5rem;
-    right:-1rem;
     position: absolute;
-
+    top: 0;
+    right: 0;
 }
 
-/* ==================== PRODUCTS | index page ====================*/
-
-.card__item {
+/* ==================== CATEGORIES ====================*/
+.categorie__item {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-    padding: 2rem;
-    min-height: 2rem;
+    height: 25rem;
     text-align: center;
+    flex: 1 1 25rem;
+    overflow: hidden;
+    background: var(--gray-bg1);
+    position: relative;
 }
 
-.card__item h3 {
+.categorie__img {
+    transition: .4s;
+}
+
+.categorie__img img {
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.categorie__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background-image: linear-gradient(#2c2d30c7, #2c2d30c7);
+}
+
+.categorie__content h3 {
     margin-bottom: 2rem;
 }
 
-.p--01{
-    background:var(--gray-bg1) url(../img/img1_illustration.png);
+.categorie__item:hover .categorie__img {
+    transform: scale(1.1);
 }
 
-.p--02{
-    background:var(--gray-bg1) url(../img/img2_graphics.png);
-}
-
-.p--03{
-    background:var(--gray-bg1) url(../img/img3_pngtuber.png);
-}
-
-.p--01,
-.p--02,
-.p--03 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.card__item img {
-    opacity: 0.5;
-}
 /*==================== COMMISSIONS ====================*/
 
 #comm-itens .container {
@@ -524,13 +529,14 @@ main {
     gap: 4rem;
 }
 
-.comm-graphic__emotes,
-.comm-graphic__badges {
-    background-color: var(--gray-bg1);
-    padding: 4rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+.comm-item__header {
+    margin-top: 4rem;
 }
+
+.comm__price--style h4 {
+    padding: 2rem;
+}
+
 /*-status-*/
 .comm-item__status {
     background-color: var(--gray-bg1);
@@ -559,9 +565,13 @@ main {
     background-color: var(--red);
 }
 
+/*illust*/
+.comm__price--type {
+    flex: 1 1 36rem;
+}
 
 .comm__price--style {
-    max-width: 36rem;
+    max-width: 34.5rem;
     width: 100%;
     background-color: var(--gray-bg1);
     border-radius: var(--border-radius);
@@ -570,17 +580,35 @@ main {
     text-align: center;
 }
 
-.comm__price img {
-    background: url(../img/sample_background.png) top center no-repeat;
-    background-size: cover;
-    height:50rem;
-    width:36rem;
+.comm__price--style figure {
+    background: url(../img/halftonepatternbase_50p.png);
+}
+
+.comm__price--style img {
+    display: block;
+    max-width: 34.5rem;
     object-fit: cover;
 }
 
-.comm__price--style h4{
+
+/*graphics*/
+.comm-graphic__emotes,
+.comm-graphic__badges {
+    background-color: var(--gray-bg1);
     padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    flex: 1 1 auto;
+    max-width: 56rem;
+    min-height: 33.5rem;
 }
+
+img.comm__image-graphic {
+    max-width: 52rem;
+    width: 100% !important;
+    display: block;
+}
+
 
 /*- price and info-*/
 .comm__info--detail {
@@ -616,10 +644,12 @@ NOTES
 ----------------------------------------*/
 .comm__notes--do,
 .comm__notes--dont {
-    max-width: 54rem;
-    width: 100% !important;
+    flex: 1 1 auto;
 }
 
+.comm__notes--dos h3 {
+    margin-bottom: 2rem;
+}
 .comm__notes--do i {
     color: var(--green);
     font-size: 1.5rem;
@@ -900,11 +930,11 @@ form {
 #footer {
     position: relative;
     margin-top: 4rem;
-
+    background: var(--gray-bg1);
 }
 
 #footer .container {
-    padding:2rem;
+    padding: 2rem;
     font-weight: var(--fw-800);
     text-transform: uppercase;
     font-size: 1rem;
@@ -931,41 +961,41 @@ form {
     height: 3rem;
     width: 3rem;
 }
+
 /* ---------- gradient ---------- */
 #footer::after {
     content: "";
-    width: 60%;
+    width: 100%;
     height: 0.2rem;
-    left: 50%;
     bottom: 0;
     position: absolute;
-    transform: translate(-50%);
     background-image: var(--gradient01);
 }
 
 /* ==================== THANKS PAGE ==================== */
 
-#thanks__page .container {
+#thanks__page {
+    position: relative;
     padding: 0;
-    background: var(--gray-bg1);
+    margin: 0 auto;
+    overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    overflow: hidden;
-}
-
-#thanks__page .img--area {
-    background-color: var(--dark-bg2);
-    width: 100%;
-}
-
-.img--area img {
-    display: block;
-    margin: 0 auto;
+    background: var(--gray-bg1);
 }
 
 .txt--area {
     text-align: center;
     padding: 4rem;
+    width: 45%;
+}
+
+.txt--area h2 {
+    color: var(--orange);
+}
+
+#thanks__page img {
+    width: 100%;
 }
 
 /* ==================== MOBILE  ==================== */
@@ -1080,7 +1110,6 @@ form {
         width: 100%;
     }
 
-
     /*-illustrations item prices-*/
 
     /*-graphics-*/
@@ -1108,4 +1137,22 @@ form {
         justify-content: center;
     }
 
+}
+
+@media (max-width: 1130px) {
+
+    #thanks__page {
+        max-width: 55rem !important;
+        width: 100%;
+    }
+
+    /*thanks*/
+    .txt--area {
+        width: 100%;
+        order: 2;
+    }
+
+    #thanks__page img {
+        order: 1;
+    }
 }
