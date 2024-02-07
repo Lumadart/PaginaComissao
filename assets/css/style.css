@@ -30,7 +30,7 @@ textarea {
     --dark-bg2: #0c0c0c;
 
     /*colors*/
-    --teal: #17b19c;
+    --teal: #09c3ba;
     --orange: #f5b454;
 
     /*color status*/
@@ -39,7 +39,6 @@ textarea {
 
     /*gradients*/
     --gradient01: linear-gradient(45deg, var(--teal), var(--orange));
-    --gradient-gray: linear-gradient(0deg, #0c0c0cb6, 80%, #2c2d306c);
 
     /*box shadow*/
     --box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px, rgba(0, 0, 0, 0.1) 0px 3px 3px;
@@ -330,14 +329,14 @@ hr {
     max-width: 1160px !important;
     width: 100%;
     margin: 0 auto !important;
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 
 /*---------- min height pages ----------*/
 
 main {
-    margin-top:8rem ;
     min-height: calc(100vh - 20rem);
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -382,18 +381,10 @@ main {
 /* ==================== HEADER ====================*/
 
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
     height: 8rem;
     width: 100%;
-    z-index: 2;
-
-    background: #2c2d30a1;
-    backdrop-filter: blur(10px);
-    border-radius: 0 0 5px 5px;
-    box-shadow: var(--box-shadow);
 }
+
 
 #header .container {
     padding: 2rem;
@@ -448,77 +439,66 @@ main {
     display: none;
 }
 
-/* ==================== HERO ====================*/
+/* ==================== HOMEPAGE ====================*/
 
 #hero {
-    width: 100%;
-    background: var(--gray-bg1) url(../img/halftonepatternbase_50p.png) bottom left repeat-x;
-    overflow: hidden;
-    margin-bottom: 2rem;
-}
-
-.header__hero {
+    background: url(../img/hero_bg.png) top center no-repeat;
+    min-height: 45rem;
+    background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
-.header__hero--left {
-    padding: 4rem 0;
-    width: 50%;
+#hero .container {
+    padding: 0;
 }
 
-.header__hero--left h1 {
-    color: var(--orange);
-}
-
-.header__hero-img {
-    max-width: 43rem;
-    width: 100%;
+.img_hero_1 {
     position: absolute;
-    top: 0;
-    right: 0;
+    left:50%;
+    transform: translate(-50%);
+    background-size: contain;
+}
+.img_hero_2 {
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    background-size: contain;
 }
 
-/* ==================== CATEGORIES ====================*/
+.hero__txt {
+    align-items: flex-end;
+}
+
+/*==================== CATEGORIES ====================*/
 .categorie__item {
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
-    height: 25rem;
-    text-align: center;
-    flex: 1 1 25rem;
-    overflow: hidden;
+    flex: 1 1 auto;
     background: var(--gray-bg1);
-    position: relative;
+    border-radius: var(--border-radius);
+    max-width: 52.5rem;
+    overflow: hidden;
 }
 
 .categorie__img {
-    transition: .4s;
+    height: 25rem;
+    overflow: hidden;
+    background: var(--dark-bg2);
+}
+
+.categorie__item h3 {
+    padding: 2rem;
+    text-align: center;
 }
 
 .categorie__img img {
-    width: 100% !important;
-    object-fit: cover;
-}
-
-.categorie__content {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    background-image: linear-gradient(#2c2d30c7, #2c2d30c7);
+    transition: .4s;
+    opacity: .5;
 }
 
-.categorie__content h3 {
-    margin-bottom: 2rem;
-}
-
-.categorie__item:hover .categorie__img {
+.categorie__item:hover .categorie__img img {
     transform: scale(1.1);
+    opacity: 1;
 }
 
 /*==================== COMMISSIONS ====================*/
@@ -587,6 +567,7 @@ main {
 .comm__price--style img {
     display: block;
     max-width: 34.5rem;
+    height: auto;
     object-fit: cover;
 }
 
@@ -650,6 +631,7 @@ NOTES
 .comm__notes--dos h3 {
     margin-bottom: 2rem;
 }
+
 .comm__notes--do i {
     color: var(--green);
     font-size: 1.5rem;
@@ -1023,6 +1005,7 @@ form {
         transition: .4s;
         visibility: hidden;
         overflow-y: hidden;
+
     }
 
     #navbar.active-menu #nav__menu {
@@ -1034,6 +1017,7 @@ form {
     #nav__menu a {
         padding: 2rem;
         margin: 0 1rem;
+        text-align: center;
         border-bottom: 0.1rem solid var(--dark-bg1);
     }
 
