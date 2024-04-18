@@ -165,7 +165,7 @@ h4 {
 
 .title--center {
     font-size: 2.5rem;
-    margin: 6rem 0;
+    margin: 2rem 0 4rem;
     position: relative;
     text-transform: uppercase;
     text-align: center;
@@ -186,7 +186,7 @@ h4 {
 
 .subtitle {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .detail {
@@ -329,13 +329,13 @@ hr {
     max-width: 1160px !important;
     width: 100%;
     margin: 0 auto !important;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
 }
 
 /*---------- min height pages ----------*/
 
 main {
-    min-height: calc(100vh - 20rem);
+    min-height: calc(100vh - 16rem);
     margin: 0 auto;
     padding: 0;
 }
@@ -441,30 +441,26 @@ main {
 
 /* ==================== HOMEPAGE ====================*/
 
-#hero {
+#hero.container  {
     background: url(../img/hero_bg.png) top center no-repeat;
-    min-height: 45rem;
+    height: 45rem;
     background-size: cover;
-    position: relative;
     overflow: hidden;
 }
 
-#hero .container {
-    padding: 0;
+.hero_content {
+    background: url(../img/hero_img1.png) top center no-repeat;
+    background-size: contain;
 }
 
-.img_hero_1 {
-    position: absolute;
-    left:50%;
-    transform: translate(-50%);
-    background-size: contain;
+.img_hero {
+    margin:0 auto;
+    display: block;
+    max-width: 46rem;
+    width: 100%;
+    padding: 0 2rem;
 }
-.img_hero_2 {
-    position: absolute;
-    left:50%;
-    transform: translate(-50%);
-    background-size: contain;
-}
+
 
 .hero__txt {
     align-items: flex-end;
@@ -561,14 +557,16 @@ main {
 }
 
 .comm__price--style figure {
-    background: url(../img/halftonepatternbase_50p.png);
+    background: var(--dark-bg2) url(../img/halftonepatternbase_50p.png);
 }
 
 .comm__price--style img {
     display: block;
     max-width: 34.5rem;
+    width: 100%;
     height: auto;
     object-fit: cover;
+    margin:0 auto;
 }
 
 
@@ -656,7 +654,7 @@ NOTES
     color: var(--light-txt);
     background: var(--gray-bg1);
     position: relative;
-    padding: 1rem 4rem 1.5rem;
+    padding: .5rem 4rem 2rem;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
@@ -671,7 +669,7 @@ NOTES
     align-items: center;
     font-size: 1.5rem;
     letter-spacing: .1rem;
-    padding: 2rem 0 1rem;
+    padding: 2rem 6rem 0rem 1rem;
     margin: 0;
     cursor: pointer;
 }
@@ -911,7 +909,6 @@ form {
 /* ==================== FOOTER ==================== */
 #footer {
     position: relative;
-    margin-top: 4rem;
     background: var(--gray-bg1);
 }
 
@@ -991,6 +988,10 @@ form {
     /*menu mobile*/
     #btn-mobile {
         display: block;
+    }
+
+    .active::before  {
+        display: none;
     }
 
     #nav__menu {
